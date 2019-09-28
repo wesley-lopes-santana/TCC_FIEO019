@@ -1,0 +1,523 @@
+fileFormatVersion: 2
+guid: 949d3b4fd6462194f90c1a27e814db7b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5319296124407436642
+    second: viktor-stambert-animation-veo-punch-attack-done-fixed-1-1_0
+  - first:
+      213: 2301196644843660933
+    second: viktor-stambert-animation-veo-punch-attack-done-fixed-1-1_1
+  - first:
+      213: 648502424338087514
+    second: viktor-stambert-animation-veo-punch-attack-done-fixed-1-1_2
+  - first:
+      213: 496997343477648429
+    second: viktor-stambert-animation-veo-punch-attack-done-fixed-1-1_3
+  - first:
+      213: 8690057869127625143
+    second: viktor-stambert-animation-veo-punch-attack-done-fixed-1-1_4
+  - first:
+      213: 1957594933085866979
+    second: viktor-stambert-animation-veo-punch-attack-done-fixed-1-1_5
+  - first:
+      213: 4119090039407035833
+    second: viktor-stambert-animation-veo-punch-attack-done-fixed-1-1_6
+  - first:
+      213: 2297766789527461104
+    second: viktor-stambert-animation-veo-punch-attack-done-fixed-1-1_7
+  - first:
+      213: 1721581644911796848
+    second: viktor-stambert-animation-veo-punch-attack-done-fixed-1-1_8
+  - first:
+      213: 8454495923924272907
+    second: viktor-stambert-animation-veo-punch-attack-done-fixed-1-1_9
+  - first:
+      213: -3509861685084129291
+    second: viktor-stambert-animation-veo-punch-attack-done-fixed-1-1_10
+  - first:
+      213: -4979908527090644233
+    second: viktor-stambert-animation-veo-punch-attack-done-fixed-1-1_11
+  - first:
+      213: 1090265113823429785
+    second: viktor-stambert-animation-veo-punch-attack-done-fixed-1-1_12
+  - first:
+      213: 5662170717691394286
+    second: viktor-stambert-animation-veo-punch-attack-done-fixed-1-1_13
+  - first:
+      213: -7083675616099723827
+    second: viktor-stambert-animation-veo-punch-attack-done-fixed-1-1_14
+  - first:
+      213: 1155147185449875538
+    second: viktor-stambert-animation-veo-punch-attack-done-fixed-1-1_15
+  - first:
+      213: -439974345173178485
+    second: viktor-stambert-animation-veo-punch-attack-done-fixed-1-1_16
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 420
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: viktor-stambert-animation-veo-punch-attack-done-fixed-1-1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1920
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1892469dc5d68b478bb68951cb59fe3
+      internalID: -5319296124407436642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: viktor-stambert-animation-veo-punch-attack-done-fixed-1-1_1
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1920
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa4cd35d9b60bdc48928299c0f71b73e
+      internalID: 2301196644843660933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: viktor-stambert-animation-veo-punch-attack-done-fixed-1-1_2
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1920
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa1ba10e651c181459ffd507693efc34
+      internalID: 648502424338087514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: viktor-stambert-animation-veo-punch-attack-done-fixed-1-1_3
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1920
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21d5d2ea04f394a4d999b3684dab7efb
+      internalID: 496997343477648429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: viktor-stambert-animation-veo-punch-attack-done-fixed-1-1_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1440
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02d63b77003c81245ba87b089790b30a
+      internalID: 8690057869127625143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: viktor-stambert-animation-veo-punch-attack-done-fixed-1-1_5
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1440
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17711b50984d8ed4083eeccc76c39a9a
+      internalID: 1957594933085866979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: viktor-stambert-animation-veo-punch-attack-done-fixed-1-1_6
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1440
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ba2a636d00a4cf4bac608a709d93126
+      internalID: 4119090039407035833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: viktor-stambert-animation-veo-punch-attack-done-fixed-1-1_7
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1440
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b2803c9818de40449f90e676bcf128a
+      internalID: 2297766789527461104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: viktor-stambert-animation-veo-punch-attack-done-fixed-1-1_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 960
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12e5d5c76fe0f4d47a611a7d72d260b2
+      internalID: 1721581644911796848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: viktor-stambert-animation-veo-punch-attack-done-fixed-1-1_9
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 960
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8680e20345d74a746b68c4a05a83f2e5
+      internalID: 8454495923924272907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: viktor-stambert-animation-veo-punch-attack-done-fixed-1-1_10
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 960
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eeee30f1385e7e408b2f2df7e3520ed
+      internalID: -3509861685084129291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: viktor-stambert-animation-veo-punch-attack-done-fixed-1-1_11
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 960
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 378c777f9b433b044bc5bd327aaf3d0e
+      internalID: -4979908527090644233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: viktor-stambert-animation-veo-punch-attack-done-fixed-1-1_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 480
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2859c1edaca3a1c40a76fa1958f63401
+      internalID: 1090265113823429785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: viktor-stambert-animation-veo-punch-attack-done-fixed-1-1_13
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 480
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86da0bb32888d554c85ac537b7541e94
+      internalID: 5662170717691394286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: viktor-stambert-animation-veo-punch-attack-done-fixed-1-1_14
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 480
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd291d12445405647b67fe5e61025747
+      internalID: -7083675616099723827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: viktor-stambert-animation-veo-punch-attack-done-fixed-1-1_15
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 480
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84c69f99b273aec4881e5b42cf1a95bd
+      internalID: 1155147185449875538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: viktor-stambert-animation-veo-punch-attack-done-fixed-1-1_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd225cfd142c6894e8862a5cee0ed6e3
+      internalID: -439974345173178485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

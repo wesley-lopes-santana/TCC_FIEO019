@@ -1,0 +1,643 @@
+fileFormatVersion: 2
+guid: 74f6f0c5172550d44b449a7925abbd9f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6516589874617826705
+    second: viktor-stambert-animation-veo-death-done-fixed-1_0
+  - first:
+      213: -7641063525574395784
+    second: viktor-stambert-animation-veo-death-done-fixed-1_1
+  - first:
+      213: 3340301834555632648
+    second: viktor-stambert-animation-veo-death-done-fixed-1_2
+  - first:
+      213: 5621867120472166809
+    second: viktor-stambert-animation-veo-death-done-fixed-1_3
+  - first:
+      213: -5015730386634880006
+    second: viktor-stambert-animation-veo-death-done-fixed-1_4
+  - first:
+      213: -8921332420191821223
+    second: viktor-stambert-animation-veo-death-done-fixed-1_5
+  - first:
+      213: 911440671641518727
+    second: viktor-stambert-animation-veo-death-done-fixed-1_6
+  - first:
+      213: 8306482331031834231
+    second: viktor-stambert-animation-veo-death-done-fixed-1_7
+  - first:
+      213: -1970969419560155998
+    second: viktor-stambert-animation-veo-death-done-fixed-1_8
+  - first:
+      213: -1079788563929141867
+    second: viktor-stambert-animation-veo-death-done-fixed-1_9
+  - first:
+      213: 6828066476782525767
+    second: viktor-stambert-animation-veo-death-done-fixed-1_10
+  - first:
+      213: 8225699143258476799
+    second: viktor-stambert-animation-veo-death-done-fixed-1_11
+  - first:
+      213: 576592234128040735
+    second: viktor-stambert-animation-veo-death-done-fixed-1_12
+  - first:
+      213: -6410551524230089083
+    second: viktor-stambert-animation-veo-death-done-fixed-1_13
+  - first:
+      213: 8406223511174045085
+    second: viktor-stambert-animation-veo-death-done-fixed-1_14
+  - first:
+      213: 3140660623925187696
+    second: viktor-stambert-animation-veo-death-done-fixed-1_15
+  - first:
+      213: 6709592954366728447
+    second: viktor-stambert-animation-veo-death-done-fixed-1_16
+  - first:
+      213: -7312039958456347976
+    second: viktor-stambert-animation-veo-death-done-fixed-1_17
+  - first:
+      213: -3007932455079057748
+    second: viktor-stambert-animation-veo-death-done-fixed-1_18
+  - first:
+      213: 6109508019468101219
+    second: viktor-stambert-animation-veo-death-done-fixed-1_19
+  - first:
+      213: -8854550665344110344
+    second: viktor-stambert-animation-veo-death-done-fixed-1_20
+  - first:
+      213: 140134471240392782
+    second: viktor-stambert-animation-veo-death-done-fixed-1_21
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 352
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: viktor-stambert-animation-veo-death-done-fixed-1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1536
+        width: 384
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a9c8196565c968469c6234340a88a07
+      internalID: -6516589874617826705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: viktor-stambert-animation-veo-death-done-fixed-1_1
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1536
+        width: 384
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6463f6bef2e1a2b45ba8d3eb7323d500
+      internalID: -7641063525574395784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: viktor-stambert-animation-veo-death-done-fixed-1_2
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1536
+        width: 384
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dcbeef6c2488254e8fea9d7d524041d
+      internalID: 3340301834555632648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: viktor-stambert-animation-veo-death-done-fixed-1_3
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1536
+        width: 384
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adddeb05d77876843a555a92b2f894aa
+      internalID: 5621867120472166809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: viktor-stambert-animation-veo-death-done-fixed-1_4
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1536
+        width: 384
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5592a11f9beaf4043a8a05626d98f841
+      internalID: -5015730386634880006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: viktor-stambert-animation-veo-death-done-fixed-1_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1152
+        width: 384
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fac0641b043ebed4eaf35cd7d1cd883b
+      internalID: -8921332420191821223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: viktor-stambert-animation-veo-death-done-fixed-1_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1152
+        width: 384
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ce14a26d0fc03e4eaa5ecb67dd4158e
+      internalID: 911440671641518727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: viktor-stambert-animation-veo-death-done-fixed-1_7
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1152
+        width: 384
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98f1fb0afb6df4e4ea4041c99f4a7f58
+      internalID: 8306482331031834231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: viktor-stambert-animation-veo-death-done-fixed-1_8
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1152
+        width: 384
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c6af298821f5ed499b9173ca1362513
+      internalID: -1970969419560155998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: viktor-stambert-animation-veo-death-done-fixed-1_9
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1152
+        width: 384
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f38d5806eb73dd048b6dce2205106a85
+      internalID: -1079788563929141867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: viktor-stambert-animation-veo-death-done-fixed-1_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 384
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfd93413237a21b40a1b60a9713ca047
+      internalID: 6828066476782525767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: viktor-stambert-animation-veo-death-done-fixed-1_11
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 768
+        width: 384
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec054ca5fa3597949854935a5c58a427
+      internalID: 8225699143258476799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: viktor-stambert-animation-veo-death-done-fixed-1_12
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 768
+        width: 384
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cec6320e7860fd409a5238ada261a0f
+      internalID: 576592234128040735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: viktor-stambert-animation-veo-death-done-fixed-1_13
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 768
+        width: 384
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ebe9f7c0c59baa4bae04c2801d58037
+      internalID: -6410551524230089083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: viktor-stambert-animation-veo-death-done-fixed-1_14
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 768
+        width: 384
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e00fff3e327dc75488618c7d426d8c87
+      internalID: 8406223511174045085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: viktor-stambert-animation-veo-death-done-fixed-1_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 384
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31305b4ba32b487439904559262a3163
+      internalID: 3140660623925187696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: viktor-stambert-animation-veo-death-done-fixed-1_16
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 384
+        width: 384
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6c4130c989bde744852fe2cbd466bfb
+      internalID: 6709592954366728447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: viktor-stambert-animation-veo-death-done-fixed-1_17
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 384
+        width: 384
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da715559bad255e40b6e8fd34e3b298c
+      internalID: -7312039958456347976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: viktor-stambert-animation-veo-death-done-fixed-1_18
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 384
+        width: 384
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea683bda4fd12334d8a608d0cca09e2b
+      internalID: -3007932455079057748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: viktor-stambert-animation-veo-death-done-fixed-1_19
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 384
+        width: 384
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 274854744ac0b0048b01906efc3e39dc
+      internalID: 6109508019468101219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: viktor-stambert-animation-veo-death-done-fixed-1_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 384
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c42dc702e7447d04d9037da03cfb4b38
+      internalID: -8854550665344110344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: viktor-stambert-animation-veo-death-done-fixed-1_21
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 384
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28d3d619941e0ca4b88566cb3e7ec2cb
+      internalID: 140134471240392782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
