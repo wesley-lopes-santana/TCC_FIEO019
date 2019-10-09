@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class slimeIA : MonoBehaviour
 {   
-
+    
     private GameController  _GameController;
     private Rigidbody2D     slimeRb;
     private Animator        slimeAnimator;
