@@ -26,7 +26,11 @@ The following packages were updated:
   com.unity.ide.rider from version 1.0.8 to 1.1.0
   com.unity.ide.vscode from version 1.0.7 to 1.1.0
 
+<<<<<<< HEAD
 === Tue Oct 15 21:20:21 2019
+=======
+=== Tue Oct 15 21:19:57 2019
+>>>>>>> 5d7feb2d0a74a541aa0070b9019b264c4fefda6e
 
 Packages were changed.
 Update Mode: updateDependencies
