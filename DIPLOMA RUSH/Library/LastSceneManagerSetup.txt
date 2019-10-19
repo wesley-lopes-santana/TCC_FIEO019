@@ -1,5 +1,5 @@
 sceneSetups:
-- path: "Assets/Scenes/Menu/Op\xE7\xF5es.unity"
+- path: Assets/Scenes/Fases/Fase 3-1.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

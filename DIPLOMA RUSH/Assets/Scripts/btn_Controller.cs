@@ -14,6 +14,8 @@ public class btn_Controller : MonoBehaviour
 	private bool clickopc;
 	private bool clickcre;
 	private bool clickVolta;
+	private bool clickVolOpc;
+	private bool clickCon;
 
     
     void Update()
@@ -27,10 +29,16 @@ public class btn_Controller : MonoBehaviour
 		}
 		
 		if(clickcre == true){
-			Application.LoadLevel("SampleScene");
+			Application.LoadLevel("Creditos");
 		}
 		if(clickVolta == true){
 			Application.LoadLevel("Menu");
+		}
+		if(clickVolOpc == true){
+			Application.LoadLevel("Opções");
+		}
+		if(clickCon == true){
+			Application.LoadLevel("Controles");
 		}
         
     }
@@ -46,5 +54,11 @@ public class btn_Controller : MonoBehaviour
 	}
 	public void Click_vol(bool click){
 		clickVolta = true;
+	}
+	public void Click_volOpc(bool click){
+		clickVolOpc = true;
+	}
+	public void Click_Con(bool click){
+		clickCon = true;
 	}
 }
