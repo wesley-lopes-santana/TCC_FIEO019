@@ -44,11 +44,15 @@
     <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
-  <ItemGroup>     <Compile Include="Assets\Scripts\GameController.cs" />
+  <ItemGroup>     <Compile Include="Assets\Scripts\Boss1.cs" />
+     <Compile Include="Assets\Scripts\btn_Controller.cs" />
+     <Compile Include="Assets\Scripts\GameController.cs" />
      <Compile Include="Assets\Scripts\Parallax.cs" />
+     <Compile Include="Assets\Scripts\PlataformaSobeDesce.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\slimeIA.cs" />
      <Compile Include="Assets\Scripts\slimeIAMesmo.cs" />
+     <Compile Include="Assets\Scripts\Teleporte.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/Roberto/Desktop/TCC/TCC_FIEO019/DIPLOMA RUSH/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>

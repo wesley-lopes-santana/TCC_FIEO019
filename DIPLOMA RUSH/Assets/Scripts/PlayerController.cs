@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-
+    public LayerMask groundLayer;
     public  GameController   _GameController;
     private slimeIAMesmo     _SlimeIAMesmo;
 
@@ -32,7 +32,8 @@ public class PlayerController : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {
+    {   
+        groundLayer = LayerMask.GetMask("Default");
         PlayerRb = GetComponent<Rigidbody2D>();
         PlayerAnimator = GetComponent<Animator>();
         PlayerSr = GetComponent<SpriteRenderer>();
@@ -89,9 +90,9 @@ public class PlayerController : MonoBehaviour
     }
 
 
-    //void FixedUpdate(){
-    //    estaNoChao = Physics2D.OverlapCircle(GroundCheck.position, 0.02f);
-    //}
+    void FixedUpdate(){
+        estaNoChao = Physics2D.OverlapCircle(GroundCheck.position, 0.02f, groundLayer);
+    }
 
     void OnTriggerEnter2D(Collider2D colider) {
         if(colider.gameObject.tag == "Coletavel")

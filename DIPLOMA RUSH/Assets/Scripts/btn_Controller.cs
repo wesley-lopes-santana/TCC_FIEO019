@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class btn_Controller : MonoBehaviour
 {
@@ -21,24 +22,24 @@ public class btn_Controller : MonoBehaviour
     void Update()
     {
 		if(clickini == true){
-			Application.LoadLevel("Fase 1-1");
+			SceneManager.LoadScene("Fase 1-1");
 		}
 		
 		if(clickopc == true){
-			Application.LoadLevel("Opções");
+			SceneManager.LoadScene("Opções");
 		}
 		
 		if(clickcre == true){
-			Application.LoadLevel("Creditos");
+			SceneManager.LoadScene("Creditos");
 		}
 		if(clickVolta == true){
-			Application.LoadLevel("Menu");
+			SceneManager.LoadScene("Menu");
 		}
 		if(clickVolOpc == true){
-			Application.LoadLevel("Opções");
+			SceneManager.LoadScene("Opções");
 		}
 		if(clickCon == true){
-			Application.LoadLevel("Controles");
+			SceneManager.LoadScene("Controles");
 		}
         
     }
