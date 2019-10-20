@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public LayerMask groundLayer;
-    public  GameController   _GameController;
-    private slimeIAMesmo     _SlimeIAMesmo;
+    public LayerMask            groundLayer;
+    public  GameController      _GameController;
+    private slimeIAMesmo        _SlimeIAMesmo;
 
     private Rigidbody2D         PlayerRb;
     private Animator            PlayerAnimator;
@@ -29,6 +29,8 @@ public class PlayerController : MonoBehaviour
 
     public  int                 maxHp;
     public  int                 moedas = 0;
+
+    public Transform            TransformPlayer;
 
     // Start is called before the first frame update
     void Start()
@@ -119,12 +121,21 @@ public class PlayerController : MonoBehaviour
         {   
             estaNoChao = true;
         }
+
+        if (colider.transform.tag == "plataformaMeche")
+        {
+            TransformPlayer.parent = colider.transform;
+        }
     }
 
     void OnCollisionExit2D(Collision2D colider) {
         if(colider.gameObject.tag == "ground")
         {   
             estaNoChao = false;
+        }
+        if (colider.transform.tag == "plataformaMeche")
+        {
+            TransformPlayer.parent = null;
         }
     }
 
