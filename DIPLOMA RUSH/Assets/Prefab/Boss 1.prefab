@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 3783033112916330528}
   - component: {fileID: 3613445316118786732}
   - component: {fileID: 3911339123043870095}
-  - component: {fileID: 5753217996411209495}
   - component: {fileID: 4107231107189646213}
+  - component: {fileID: 7584926453426756844}
+  - component: {fileID: 4743645355072959294}
   m_Layer: 9
   m_Name: Boss 1
   m_TagString: hitBox
@@ -106,22 +107,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!58 &5753217996411209495
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4417325059625905152}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.010000005, y: -0.23458147}
-  serializedVersion: 2
-  m_Radius: 0.17527121
 --- !u!114 &4107231107189646213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,6 +119,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 285ab5bf9a4d9584b9c3e4c4c67a678e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ProxPosicao: []
+  HitBox: {fileID: 0}
+  velocidade: 0
+  estaOlhandoEsquerda: 0
+--- !u!95 &7584926453426756844
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4417325059625905152}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!70 &4743645355072959294
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4417325059625905152}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.06, y: 0}
+  m_Size: {x: 0.29, y: 0.91}
+  m_Direction: 0
 --- !u!1 &8031090012459697484
 GameObject:
   m_ObjectHideFlags: 0
@@ -143,7 +167,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1141021688331391926}
-  - component: {fileID: 1174995084570898615}
+  - component: {fileID: 1297137187711237659}
   m_Layer: 12
   m_Name: HitBox
   m_TagString: damage
@@ -165,8 +189,8 @@ Transform:
   m_Father: {fileID: 3783033112916330528}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &1174995084570898615
-CircleCollider2D:
+--- !u!70 &1297137187711237659
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -178,6 +202,6 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.23331267}
-  serializedVersion: 2
-  m_Radius: 0.17470795
+  m_Offset: {x: 0.06, y: 0}
+  m_Size: {x: 0.29, y: 0.91}
+  m_Direction: 0
