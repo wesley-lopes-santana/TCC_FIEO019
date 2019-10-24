@@ -928,17 +928,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2731424017851141670, guid: 9d5af77b208e44d4bb6123c91ba702f4,
-        type: 3}
-      propertyPath: m_Layer
-      value: 12
-      objectReference: {fileID: 0}
     - target: {fileID: 2731424017907748219, guid: 9d5af77b208e44d4bb6123c91ba702f4,
         type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 7059875530559127316, guid: 20aece46678b07a4daf48bb170d88766,
         type: 3}
+    - target: {fileID: 2731424017851141670, guid: 9d5af77b208e44d4bb6123c91ba702f4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d5af77b208e44d4bb6123c91ba702f4, type: 3}
 --- !u!4 &58041747 stripped
@@ -3202,17 +3202,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2731424017851141670, guid: 9d5af77b208e44d4bb6123c91ba702f4,
-        type: 3}
-      propertyPath: m_Layer
-      value: 12
-      objectReference: {fileID: 0}
     - target: {fileID: 2731424017907748219, guid: 9d5af77b208e44d4bb6123c91ba702f4,
         type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 7059875530559127316, guid: 20aece46678b07a4daf48bb170d88766,
         type: 3}
+    - target: {fileID: 2731424017851141670, guid: 9d5af77b208e44d4bb6123c91ba702f4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d5af77b208e44d4bb6123c91ba702f4, type: 3}
 --- !u!4 &314435543 stripped
@@ -17545,8 +17545,9 @@ MonoBehaviour:
     type: 3}
   hitColor: {r: 0.9245283, g: 0.23113208, b: 0.24943483, a: 1}
   noHitColor: {r: 1, g: 1, b: 1, a: 0.7137255}
-  maxHp: 50
+  maxHp: 5
   moedas: 0
+  TransformPlayer: {fileID: 0}
 --- !u!70 &1843735622
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

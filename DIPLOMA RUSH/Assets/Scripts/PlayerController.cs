@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class PlayerController : MonoBehaviour
 {
@@ -32,6 +34,7 @@ public class PlayerController : MonoBehaviour
 
     public Transform            TransformPlayer;
 
+    private Teleporte      _GameControllerTeleporte;
     // Start is called before the first frame update
     void Start()
     {   
@@ -40,6 +43,7 @@ public class PlayerController : MonoBehaviour
         PlayerAnimator = GetComponent<Animator>();
         PlayerSr = GetComponent<SpriteRenderer>();
 
+        _GameControllerTeleporte = FindObjectOfType(typeof(Teleporte)) as Teleporte;
         _GameController = FindObjectOfType(typeof(GameController)) as GameController;
         _GameController.playerTransform = this.transform;
 
@@ -79,6 +83,9 @@ public class PlayerController : MonoBehaviour
             PlayerAnimator.SetTrigger("ataque");
         }
 
+        if(maxHp == 0){
+            SceneManager.LoadScene(_GameControllerTeleporte.ProximaFase-1);
+        }
 
         PlayerRb.velocity = new Vector2(lados*velocidade ,velocidadeY);
 
@@ -112,6 +119,10 @@ public class PlayerController : MonoBehaviour
         {   
             _SlimeIAMesmo.StopCoroutine("seguePlayer");
             _SlimeIAMesmo.StartCoroutine("seguePlayer");
+        }
+        else if(colider.gameObject.tag == "Buraco")
+        {   
+            SceneManager.LoadScene(_GameControllerTeleporte.ProximaFase-1);
         }
         
     }
