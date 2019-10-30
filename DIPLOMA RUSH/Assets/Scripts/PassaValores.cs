@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SobeDesce : MonoBehaviour
-{ 
+public class PassaValores : MonoBehaviour
+{   
+    public static int hp,moedas;
+    
     // Start is called before the first frame update
     void Start()
     {

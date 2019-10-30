@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Fases/Fase 4-2.unity
+=======
+- path: Assets/Scenes/Fases/Fase 2-2.unity
+>>>>>>> 08b5ee238e00513b4248f3b6ab7879aa50ef16de
   isLoaded: 1
   isActive: 1
   isSubScene: 0

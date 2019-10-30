@@ -1,7 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+<<<<<<< HEAD
 using UnityEngine.UI;
+=======
+using UnityEngine.SceneManagement;
+
+>>>>>>> 08b5ee238e00513b4248f3b6ab7879aa50ef16de
 
 public class PlayerController : MonoBehaviour
 {
@@ -28,7 +33,7 @@ public class PlayerController : MonoBehaviour
     public  Color               hitColor;
     public  Color               noHitColor;
 
-    public  int                 maxHp;
+    public  int                 maxHp = 5;
     public  int                 moedas = 0;
 	
 	public int saude;
@@ -41,6 +46,7 @@ public class PlayerController : MonoBehaviour
 
     public Transform            TransformPlayer;
 
+    private Teleporte      _GameControllerTeleporte;
     // Start is called before the first frame update
     void Start()
     {   
@@ -49,10 +55,18 @@ public class PlayerController : MonoBehaviour
         PlayerAnimator = GetComponent<Animator>();
         PlayerSr = GetComponent<SpriteRenderer>();
 
+        _GameControllerTeleporte = FindObjectOfType(typeof(Teleporte)) as Teleporte;
         _GameController = FindObjectOfType(typeof(GameController)) as GameController;
         _GameController.playerTransform = this.transform;
 
         _SlimeIAMesmo = FindObjectOfType(typeof(slimeIAMesmo)) as slimeIAMesmo;
+
+        if(PassaValores.hp != 0){
+            maxHp = PassaValores.hp;
+        }
+        if(PassaValores.moedas != 0){
+            moedas = PassaValores.moedas;
+        }
 
     }
 
@@ -88,6 +102,9 @@ public class PlayerController : MonoBehaviour
             PlayerAnimator.SetTrigger("ataque");
         }
 
+        if(maxHp == 0){
+            SceneManager.LoadScene(_GameControllerTeleporte.ProximaFase-1);
+        }
 
         PlayerRb.velocity = new Vector2(lados*velocidade ,velocidadeY);
 
@@ -132,7 +149,12 @@ public class PlayerController : MonoBehaviour
             _SlimeIAMesmo.StopCoroutine("seguePlayer");
             _SlimeIAMesmo.StartCoroutine("seguePlayer");
         }
-        
+        else if(colider.gameObject.tag == "Buraco")
+        {   
+            maxHp = 0;
+        }
+        PassaValores.hp = maxHp;
+        PassaValores.moedas = moedas;
     }
 
     void OnCollisionEnter2D(Collision2D colider) {
@@ -229,8 +251,7 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(3f);
         Time.timeScale = 0;
 
- 
-     }
+    }
 }
 
 

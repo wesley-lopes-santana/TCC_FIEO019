@@ -425,7 +425,7 @@ MonoBehaviour:
     type: 3}
   hitColor: {r: 0.9245283, g: 0.23113208, b: 0.24943483, a: 1}
   noHitColor: {r: 1, g: 1, b: 1, a: 0.7137255}
-  maxHp: 50
+  maxHp: 5
   moedas: 0
   TransformPlayer: {fileID: 0}
 --- !u!70 &187313764
@@ -5381,16 +5381,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1315908582}
     m_Modifications:
-    - target: {fileID: 1297137187711237659, guid: a498d2e52c20e6b41be322669c544822,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 0.32
-      objectReference: {fileID: 0}
-    - target: {fileID: 7584926453426756844, guid: a498d2e52c20e6b41be322669c544822,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 7a245d9f0b0b90142b3b065328eb790d, type: 2}
     - target: {fileID: 0}
       propertyPath: m_Controller
       value: 
@@ -5487,6 +5477,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1297137187711237659, guid: a498d2e52c20e6b41be322669c544822,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 7584926453426756844, guid: a498d2e52c20e6b41be322669c544822,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 7a245d9f0b0b90142b3b065328eb790d, type: 2}
     - target: {fileID: 3613445316118786732, guid: a498d2e52c20e6b41be322669c544822,
         type: 3}
       propertyPath: m_SortingOrder
