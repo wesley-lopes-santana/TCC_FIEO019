@@ -862,7 +862,7 @@ Transform:
   - {fileID: 102636259}
   - {fileID: 151397336}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &223058437
 GameObject:
@@ -1638,7 +1638,7 @@ Transform:
   m_Children:
   - {fileID: 1051066047}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &368925547 stripped
 Transform:
@@ -3987,6 +3987,85 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &946445067
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5647592819598965621, guid: edeea580aaca2c9408a2a1b508340e58,
+        type: 3}
+      propertyPath: m_Name
+      value: Buraco
+      objectReference: {fileID: 0}
+    - target: {fileID: 5647592819598965619, guid: edeea580aaca2c9408a2a1b508340e58,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12.115
+      objectReference: {fileID: 0}
+    - target: {fileID: 5647592819598965619, guid: edeea580aaca2c9408a2a1b508340e58,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 5647592819598965619, guid: edeea580aaca2c9408a2a1b508340e58,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5647592819598965619, guid: edeea580aaca2c9408a2a1b508340e58,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5647592819598965619, guid: edeea580aaca2c9408a2a1b508340e58,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5647592819598965619, guid: edeea580aaca2c9408a2a1b508340e58,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5647592819598965619, guid: edeea580aaca2c9408a2a1b508340e58,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5647592819598965619, guid: edeea580aaca2c9408a2a1b508340e58,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5647592819598965619, guid: edeea580aaca2c9408a2a1b508340e58,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5647592819598965619, guid: edeea580aaca2c9408a2a1b508340e58,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5647592819598965619, guid: edeea580aaca2c9408a2a1b508340e58,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5647592819598965619, guid: edeea580aaca2c9408a2a1b508340e58,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 51.3236
+      objectReference: {fileID: 0}
+    - target: {fileID: 5647592819598965619, guid: edeea580aaca2c9408a2a1b508340e58,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.2771
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: edeea580aaca2c9408a2a1b508340e58, type: 3}
 --- !u!1001 &955179878
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5784,7 +5863,7 @@ Transform:
   - {fileID: 1107171818}
   - {fileID: 1224258627}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: -0.75100005, y: 0, z: 0}
 --- !u!1 &1501329421
 GameObject:
@@ -6377,7 +6456,7 @@ Transform:
   - {fileID: 684940933}
   - {fileID: 883612492}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1881230070
 MonoBehaviour:

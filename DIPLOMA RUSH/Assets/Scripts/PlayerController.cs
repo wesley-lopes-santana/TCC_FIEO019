@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
     public  Color               hitColor;
     public  Color               noHitColor;
 
-    public  int                 maxHp;
+    public  int                 maxHp = 5;
     public  int                 moedas = 0;
 
     public Transform            TransformPlayer;
@@ -48,6 +48,13 @@ public class PlayerController : MonoBehaviour
         _GameController.playerTransform = this.transform;
 
         _SlimeIAMesmo = FindObjectOfType(typeof(slimeIAMesmo)) as slimeIAMesmo;
+
+        if(PassaValores.hp != 0){
+            maxHp = PassaValores.hp;
+        }
+        if(PassaValores.moedas != 0){
+            moedas = PassaValores.moedas;
+        }
 
     }
 
@@ -122,9 +129,10 @@ public class PlayerController : MonoBehaviour
         }
         else if(colider.gameObject.tag == "Buraco")
         {   
-            SceneManager.LoadScene(_GameControllerTeleporte.ProximaFase-1);
+            maxHp = 0;
         }
-        
+        PassaValores.hp = maxHp;
+        PassaValores.moedas = moedas;
     }
 
     void OnCollisionEnter2D(Collision2D colider) {
@@ -221,8 +229,7 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(3f);
         Time.timeScale = 0;
 
- 
-     }
+    }
 }
 
 
