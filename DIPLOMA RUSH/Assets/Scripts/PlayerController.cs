@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -29,6 +30,14 @@ public class PlayerController : MonoBehaviour
 
     public  int                 maxHp;
     public  int                 moedas = 0;
+	
+	public int saude;
+	public int numCor;
+	
+	public Image[] coracoes;
+	public Sprite coracaoCheio;
+	public Sprite coracaoVazio;
+	
 
     public Transform            TransformPlayer;
 
@@ -89,6 +98,16 @@ public class PlayerController : MonoBehaviour
         PlayerAnimator.SetFloat("velocidadeY", velocidadeY);
         PlayerAnimator.SetBool("estaAtacando", estaAtacando);
         PlayerAnimator.SetBool("morreu", morreu);
+		
+		numCor = maxHp;
+		
+		for (int i = 0; i < coracoes.Length; i++){
+			if(i < numCor){
+				coracoes[i].enabled = true;
+			}else{
+				coracoes[i].enabled = false;
+			}
+		}
     }
 
 
