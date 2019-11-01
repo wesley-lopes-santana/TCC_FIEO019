@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Boss1 : MonoBehaviour
+public class Boss2 : MonoBehaviour
 {
     public GameObject[] ProxPosicao;
     private Transform       alvo;
@@ -18,7 +18,7 @@ public class Boss1 : MonoBehaviour
     private  Teleporte       _GameControllerTeleporte;
 
     private int contador = 0;
-    private int vidaChefe = 3;
+    private int vidaChefe = 5;
 
 
     // Start is called before the first frame update

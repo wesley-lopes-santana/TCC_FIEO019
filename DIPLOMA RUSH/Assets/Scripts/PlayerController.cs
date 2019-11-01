@@ -137,7 +137,6 @@ public class PlayerController : MonoBehaviour
         }
         else if(colider.gameObject.tag == "damage")
         {
-            print("THAT A LOT OF DAMAGE");
             StartCoroutine("damageController");
         }
         else if(colider.gameObject.tag == "viu player")

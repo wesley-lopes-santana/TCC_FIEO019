@@ -3160,6 +3160,11 @@ MonoBehaviour:
   noHitColor: {r: 1, g: 1, b: 1, a: 0.7137255}
   maxHp: 5
   moedas: 0
+  saude: 0
+  numCor: 0
+  coracoes: []
+  coracaoCheio: {fileID: 0}
+  coracaoVazio: {fileID: 0}
   TransformPlayer: {fileID: 0}
 --- !u!70 &958449435
 CapsuleCollider2D:
@@ -4633,6 +4638,11 @@ PrefabInstance:
       propertyPath: timeToWalk
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 2731424017851141670, guid: 9d5af77b208e44d4bb6123c91ba702f4,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d5af77b208e44d4bb6123c91ba702f4, type: 3}
 --- !u!4 &1481467076 stripped
@@ -4797,6 +4807,11 @@ PrefabInstance:
         type: 3}
       propertyPath: timeToWalk
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2731424017851141670, guid: 9d5af77b208e44d4bb6123c91ba702f4,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d5af77b208e44d4bb6123c91ba702f4, type: 3}

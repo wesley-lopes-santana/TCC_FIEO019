@@ -45,6 +45,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>     <Compile Include="Assets\Scripts\Boss1.cs" />
+     <Compile Include="Assets\Scripts\Boss2.cs" />
      <Compile Include="Assets\Scripts\btn_Controller.cs" />
      <Compile Include="Assets\Scripts\GameController.cs" />
      <Compile Include="Assets\Scripts\Parallax.cs" />
