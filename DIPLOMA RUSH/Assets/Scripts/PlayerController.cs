@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     public LayerMask            groundLayer;
     public  GameController      _GameController;
     private slimeIAMesmo        _SlimeIAMesmo;
+    public  GameObject          _Escolha;
 
     private Rigidbody2D         PlayerRb;
     private Animator            PlayerAnimator;
@@ -143,6 +144,13 @@ public class PlayerController : MonoBehaviour
         {   
             _SlimeIAMesmo.StopCoroutine("seguePlayer");
             _SlimeIAMesmo.StartCoroutine("seguePlayer");
+        }
+        else if(colider.gameObject.tag == "Livro")
+        {
+            _GameController.playSFX(_GameController.sfxCoin, 0.5f);
+            _Escolha.SetActive(true);
+            Time.timeScale = 0;
+            Destroy(colider.gameObject);
         }
         else if(colider.gameObject.tag == "Buraco")
         {   

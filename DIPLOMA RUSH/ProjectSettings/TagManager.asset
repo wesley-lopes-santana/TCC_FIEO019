@@ -12,6 +12,8 @@ TagManager:
   - ground
   - plataformaMeche
   - Buraco
+  - Livro
+  - Escolha
   layers:
   - Default
   - TransparentFX
