@@ -17,7 +17,7 @@ public class Boss1 : MonoBehaviour
     private GameController  _GameController;
     private  Teleporte       _GameControllerTeleporte;
 
-    private int contador = 0;
+    public static int contador = 0;
     private int vidaChefe = 3;
 
 
@@ -64,14 +64,11 @@ public class Boss1 : MonoBehaviour
     }
 
     IEnumerator mexeChefe(){
+        
         if (transform.position != ProxPosicao[contador].transform.position){
 
         }else{
-            if (contador == 5){
-                contador = 0;
-            }else{
-                contador = contador + 1;
-            }
+            Boss1.contador = Random.Range(0,5);
         }
         
         yield return new WaitForSeconds(1);
