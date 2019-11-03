@@ -58,6 +58,7 @@
      <Compile Include="Assets\Scripts\slimeIAMesmo.cs" />
      <Compile Include="Assets\Scripts\Teleporte.cs" />
      <Compile Include="Assets\Scripts\TeleporteInterno.cs" />
+     <Compile Include="Assets\Scripts\Vini.cs" />
      <Compile Include="Assets\SobeDesce.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/Roberto/Desktop/TCC/TCC_FIEO019/DIPLOMA RUSH/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

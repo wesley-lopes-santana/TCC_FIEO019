@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PassaValores : MonoBehaviour
 {   
-    public static int hp,moedas;
+    public static int hp,moedas,cor_mapa;
     
     // Start is called before the first frame update
     void Start()

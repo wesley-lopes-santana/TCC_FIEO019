@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public  GameController      _GameController;
     private slimeIAMesmo        _SlimeIAMesmo;
     public  GameObject          _Escolha;
+    public  GameObject          _Escolha_Vini;
 
     private Rigidbody2D         PlayerRb;
     private Animator            PlayerAnimator;
@@ -31,8 +32,8 @@ public class PlayerController : MonoBehaviour
     public  Color               hitColor;
     public  Color               noHitColor;
 
-    public  int                 maxHp = 5;
-    public  int                 moedas = 0;
+    public  static int                 maxHp = 3;
+    public  static int                 moedas = 0;
 	
 	public int saude;
 	public int numCor;
@@ -63,6 +64,27 @@ public class PlayerController : MonoBehaviour
         }
         if(PassaValores.moedas != 0){
             moedas = PassaValores.moedas;
+        }
+        if(PassaValores.cor_mapa == 2){
+            int i = 0;
+            foreach(string tipo in EscolhaFase1_2.lista_tag){
+                foreach(GameObject gameObj in GameObject.FindGameObjectsWithTag(EscolhaFase1_2.lista_tag[i]))
+                {
+                    gameObj.GetComponent<Renderer>().material.color = new Color(+ .79f, + .79f, + .79f, .9f);
+
+                }
+                i++;
+            }
+        }else if(PassaValores.cor_mapa == 1){
+            int i = 0;
+            foreach(string tipo in EscolhaFase1_2.lista_tag){
+                foreach(GameObject gameObj in GameObject.FindGameObjectsWithTag(EscolhaFase1_2.lista_tag[i]))
+                {
+                    gameObj.GetComponent<Renderer>().material.color = new Color(+ 1.1f, + 1.1f, + 1.1f, 1f);
+
+                }
+                i++;
+            }
         }
 
     }
@@ -151,6 +173,12 @@ public class PlayerController : MonoBehaviour
             _Escolha.SetActive(true);
             Time.timeScale = 0;
             Destroy(colider.gameObject);
+        }
+        else if(colider.gameObject.tag == "Vini")
+        {
+            print("aiai");
+            _Escolha_Vini.SetActive(true);
+            Time.timeScale = 0;
         }
         else if(colider.gameObject.tag == "Buraco")
         {   
