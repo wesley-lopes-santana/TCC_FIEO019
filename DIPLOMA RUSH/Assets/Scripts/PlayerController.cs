@@ -62,9 +62,8 @@ public class PlayerController : MonoBehaviour
         if(PassaValores.hp != 0){
             maxHp = PassaValores.hp;
         }
-        if(PassaValores.moedas != 0){
-            moedas = PassaValores.moedas;
-        }
+        moedas = PassaValores.moedas;
+        
         if(PassaValores.cor_mapa == 2){
             int i = 0;
             foreach(string tipo in EscolhaFase1_2.lista_tag){
@@ -92,6 +91,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {   
+        print(moedas);
         //MOVIMENTO DO PERSONAGEM ESQUERDA NEGATIVO DIREITA POSITIVO
         //
         float lados = Input.GetAxisRaw("Horizontal");
@@ -122,7 +122,10 @@ public class PlayerController : MonoBehaviour
         }
 
         if(maxHp == 0){
+            PassaValores.moedas = 0;
+            PassaValores.hp = 3;
             SceneManager.LoadScene(_GameControllerTeleporte.ProximaFase-1);
+            
         }
 
         PlayerRb.velocity = new Vector2(lados*velocidade ,velocidadeY);

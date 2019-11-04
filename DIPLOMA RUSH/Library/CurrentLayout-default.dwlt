@@ -97,7 +97,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 494}
   m_MaxSize: {x: 10002, y: 14044}
   vertical: 1
-  controlID: 34
+  controlID: 57
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -117,8 +117,8 @@ MonoBehaviour:
     y: 0
     width: 204
     height: 675
-  m_MinSize: {x: 204, y: 222}
-  m_MaxSize: {x: 4004, y: 4022}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -352,7 +352,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 15056
+  m_LastSelectedObjectID: 296276
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -533,20 +533,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefab
+    - Assets/Scenes/Fases
   m_ViewMode: 1
   m_StartGridSize: 68
   m_LastFolders:
-  - Assets/Prefab
+  - Assets/Scenes/Fases
   m_LastFoldersGridSize: 68
   m_LastProjectPath: C:\Users\Roberto\Desktop\TCC\TCC_FIEO019\DIPLOMA RUSH
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 41}
-    m_SelectedIDs: 8e2f0000
-    m_LastClickedID: 12174
-    m_ExpandedIDs: 000000007a2d0000f42d0000da340000f434000000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: aa340000
+    m_LastClickedID: 13482
+    m_ExpandedIDs: 000000007a2d0000f42d00008a330000da340000f434000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -601,7 +601,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000643900009c34000074480000ea4e0000f62e000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -626,7 +626,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 1}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 68
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 173
@@ -699,21 +699,21 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 6afbffff
+      m_ExpandedIDs: b82cffff542fffff2639ffff7a53ffff9856ffff8058ffff645affff745cffffbc5effff9060ffff4a69ffff3471ffff6673fffffe76ffff6afbffff88370000883a0000204f02005c540200f25902004c5f02007c6902009871020018750200e27a0200ba7e020054850400da980400e69a0400
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: TempoTexto
+        m_OriginalName: TempoTexto
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -42878
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 5}
       m_SearchString: 
@@ -759,9 +759,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -10.869991, y: -0.9634361, z: -23.550549}
+    m_Target: {x: -6.8855057, y: -0.25852993, z: -425.42188}
     speed: 2
-    m_Value: {x: -10.277863, y: -0.9326891, z: -23.48181}
+    m_Value: {x: -6.8855057, y: -0.25852993, z: -425.42188}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -794,9 +794,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 15.95645
+    m_Target: 9.394635
     speed: 2
-    m_Value: 15.269331
+    m_Value: 9.394635
   m_Ortho:
     m_Target: 1
     speed: 2
