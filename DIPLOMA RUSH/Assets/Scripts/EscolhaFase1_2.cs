@@ -9,7 +9,7 @@ public class EscolhaFase1_2 : MonoBehaviour
     public  GameObject          _Escolha;
     public  GameObject[]        _Todos_GameObjects;
     public static string[] lista_tag = new string[8] {"hitBox","Coletavel","ground","plataformaMeche","Buraco",
-                                            "Livro","Player","Untagged"};
+                                            "Escolha1_2","Player","Untagged"};
 
     // Start is called before the first frame update
     void Start()

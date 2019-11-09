@@ -12,11 +12,12 @@ TagManager:
   - ground
   - plataformaMeche
   - Buraco
-  - Livro
   - Escolha
   - Escolha_Vini
   - Vini
   - Itens
+  - Escolha1_2
+  - AvisoFimFase
   layers:
   - Default
   - TransparentFX

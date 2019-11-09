@@ -44,12 +44,16 @@
     <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
-  <ItemGroup>     <Compile Include="Assets\Scripts\Boss1.cs" />
+  <ItemGroup>     <Compile Include="Assets\Scripts\AvisoFimFase.cs" />
+     <Compile Include="Assets\Scripts\Boss1.cs" />
      <Compile Include="Assets\Scripts\Boss2.cs" />
      <Compile Include="Assets\Scripts\btn_Controller.cs" />
+     <Compile Include="Assets\Scripts\ContaColetaveis.cs" />
      <Compile Include="Assets\Scripts\Contador.cs" />
+     <Compile Include="Assets\Scripts\ContaMoedas.cs" />
      <Compile Include="Assets\Scripts\EscolhaFase1_2.cs" />
      <Compile Include="Assets\Scripts\GameController.cs" />
+     <Compile Include="Assets\Scripts\InimigoVoador.cs" />
      <Compile Include="Assets\Scripts\Parallax.cs" />
      <Compile Include="Assets\Scripts\PassaValores.cs" />
      <Compile Include="Assets\Scripts\PlataformaDirEsq.cs" />

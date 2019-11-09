@@ -34,6 +34,7 @@ public class PlayerController : MonoBehaviour
 
     public  static int                 maxHp = 3;
     public  static int                 moedas = 0;
+    public  static int                 itens = 0;
 	
 	public int saude;
 	public int numCor;
@@ -58,6 +59,8 @@ public class PlayerController : MonoBehaviour
         _GameController.playerTransform = this.transform;
 
         _SlimeIAMesmo = FindObjectOfType(typeof(slimeIAMesmo)) as slimeIAMesmo;
+
+        itens = 0;
 
         if(PassaValores.hp != 0){
             maxHp = PassaValores.hp;
@@ -91,7 +94,6 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {   
-        print(moedas);
         //MOVIMENTO DO PERSONAGEM ESQUERDA NEGATIVO DIREITA POSITIVO
         //
         float lados = Input.GetAxisRaw("Horizontal");
@@ -170,8 +172,9 @@ public class PlayerController : MonoBehaviour
             _SlimeIAMesmo.StopCoroutine("seguePlayer");
             _SlimeIAMesmo.StartCoroutine("seguePlayer");
         }
-        else if(colider.gameObject.tag == "Livro")
-        {
+        else if(colider.gameObject.tag == "Escolha1_2")
+        {   
+            itens += 1;
             _GameController.playSFX(_GameController.sfxCoin, 0.5f);
             _Escolha.SetActive(true);
             Time.timeScale = 0;
@@ -186,6 +189,12 @@ public class PlayerController : MonoBehaviour
         else if(colider.gameObject.tag == "Buraco")
         {   
             maxHp = 0;
+        }
+        else if(colider.gameObject.tag == "Itens")
+        {
+            _GameController.playSFX(_GameController.sfxCoin, 0.5f);
+            itens += 1;
+            Destroy(colider.gameObject);
         }
         PassaValores.hp = maxHp;
         PassaValores.moedas = moedas;

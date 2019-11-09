@@ -51,9 +51,16 @@ public class Boss1 : MonoBehaviour
     void OnTriggerEnter2D(Collider2D col){
         if(col.gameObject.tag == "hitBox")
         {
-            
             _GameController.playSFX(_GameController.sfxEnemyDead, 0.32f);
             vidaChefe -= 1;
+            if (vidaChefe == 2){
+                gameObject.GetComponent<SpriteRenderer> ().color = new Color(0.887f, 0.506f, 0.517f, 1.000f);
+                velocidade = 2f;
+            }
+            if (vidaChefe == 1){
+                gameObject.GetComponent<SpriteRenderer> ().color = new Color(0.868f, 0.225f, 0.245f, 1.000f);
+                velocidade = 2.5f;
+            }
             if (vidaChefe == 0){
                 Destroy(HitBox);
                 gameObject.SetActive(false) ;
