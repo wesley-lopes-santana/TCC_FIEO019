@@ -18,6 +18,8 @@ TagManager:
   - Itens
   - Escolha1_2
   - AvisoFimFase
+  - PerdeuJogo
+  - PassouFase
   layers:
   - Default
   - TransparentFX

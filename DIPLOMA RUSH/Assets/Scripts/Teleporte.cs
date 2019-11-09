@@ -10,6 +10,9 @@ public class Teleporte : MonoBehaviour
     public  static int      minimoMoedas;
     public  static int      minimoItens;
     public  GameObject      _FaltaMoedaOuItens;
+    public  GameObject      _PassouFase;
+    public  GameObject      _PassouPelasMoedas;
+    public  GameObject      _PassouPelosColetaveis;
 
     // Start is called before the first frame update
     void Start()
@@ -49,8 +52,16 @@ public class Teleporte : MonoBehaviour
     void OnTriggerEnter2D(Collider2D col)
     {
         if(col.gameObject.tag == "Player"){
-            if(PlayerController.moedas == minimoMoedas || PlayerController.itens == minimoItens){
-                SceneManager.LoadScene(ProximaFase);
+            if(PlayerController.itens == minimoItens){
+                Time.timeScale = 0;
+                _PassouFase.SetActive(true);
+                _PassouPelasMoedas.SetActive(false);
+            }else if(PlayerController.moedas >= minimoMoedas){
+                Time.timeScale = 0;
+                PlayerController.moedas = PlayerController.moedas - minimoMoedas;
+                PassaValores.moedas = PlayerController.moedas;
+                _PassouFase.SetActive(true);
+                _PassouPelosColetaveis.SetActive(false);
             }else{
                 _FaltaMoedaOuItens.SetActive(true);
             }

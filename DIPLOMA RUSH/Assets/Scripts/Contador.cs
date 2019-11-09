@@ -5,9 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class Contador : MonoBehaviour
 {
-    public  float       tempoInicial;
-    private Text        texto;
-    private  Teleporte       _GameControllerTeleporte;
+    public      float           tempoInicial;
+    private     Text            texto;
+    private     Teleporte       _GameControllerTeleporte;
+    public     GameObject      _FimJogo;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +22,8 @@ public class Contador : MonoBehaviour
         tempoInicial -= Time.deltaTime;
         texto.text = "" + (Mathf.Round(tempoInicial).ToString());
         if(int.Parse(texto.text) == 0){
-            SceneManager.LoadScene(_GameControllerTeleporte.ProximaFase-1);
+            Time.timeScale = 0;
+            _FimJogo.SetActive(true);
             PlayerController.moedas = 0;
         }
     }

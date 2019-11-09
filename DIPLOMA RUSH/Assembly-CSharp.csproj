@@ -53,9 +53,11 @@
      <Compile Include="Assets\Scripts\ContaMoedas.cs" />
      <Compile Include="Assets\Scripts\EscolhaFase1_2.cs" />
      <Compile Include="Assets\Scripts\GameController.cs" />
+     <Compile Include="Assets\Scripts\GameOver.cs" />
      <Compile Include="Assets\Scripts\InimigoVoador.cs" />
      <Compile Include="Assets\Scripts\Parallax.cs" />
      <Compile Include="Assets\Scripts\PassaValores.cs" />
+     <Compile Include="Assets\Scripts\PassouFase.cs" />
      <Compile Include="Assets\Scripts\PlataformaDirEsq.cs" />
      <Compile Include="Assets\Scripts\PlataformaSobeDesce.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
