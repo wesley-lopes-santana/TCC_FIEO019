@@ -5,11 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class Boss2 : MonoBehaviour
 {
-    public GameObject[] ProxPosicao;
+    public  GameObject[]    ProxPosicao;
     private Transform       alvo;
     private Rigidbody2D     slimeRb;
     private Animator        slimeAnimator;
     public  GameObject      HitBox;
+    public  float           rateSpawn;
+    public  GameObject      Tiro;
+    private Vector3         destino;
+    public static Transform   boss2_local;
     
 
     public float velocidade;
@@ -18,20 +22,20 @@ public class Boss2 : MonoBehaviour
     private  Teleporte       _GameControllerTeleporte;
 
     private int contador = 0;
-    private int vidaChefe = 5;
+    private int vidaChefe = 3;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        boss2_local = this.GetComponent<Transform>();
         _GameController = FindObjectOfType(typeof(GameController)) as GameController;
         _GameControllerTeleporte = FindObjectOfType(typeof(Teleporte)) as Teleporte;
         alvo = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         slimeRb = GetComponent<Rigidbody2D>();
         slimeAnimator = GetComponent<Animator>();
         StartCoroutine("mexeChefe");
-        
-        
+        StartCoroutine("Atirando");
     }
 
     // Update is called once per frame
@@ -45,7 +49,8 @@ public class Boss2 : MonoBehaviour
         }else if(transform.position.x < alvo.position.x && transform.localScale.x > 0){
             Gira();
         }
-
+        
+        
     }
 
     void OnTriggerEnter2D(Collider2D col){
@@ -62,14 +67,14 @@ public class Boss2 : MonoBehaviour
                 velocidade = 3.5f;
             }
             if (vidaChefe == 0){
+                SceneManager.LoadScene(2);
                 Destroy(HitBox);
                 gameObject.SetActive(false) ;
-                SceneManager.LoadScene(_GameControllerTeleporte.ProximaFase);
             }
             if (vidaChefe == 0){
+                SceneManager.LoadScene(2);
                 Destroy(HitBox);
                 gameObject.SetActive(false) ;
-                SceneManager.LoadScene(_GameControllerTeleporte.ProximaFase);
             }
             
         }
@@ -87,6 +92,13 @@ public class Boss2 : MonoBehaviour
         }
         
         yield return new WaitForSeconds(1);
+    }
+
+    IEnumerator Atirando(){
+        GameObject tempPrefab = Instantiate(Tiro) as GameObject;
+        Destroy(tempPrefab, 10f);
+        yield return new WaitForSeconds(3);
+        StartCoroutine("Atirando");
     }
 
     void Gira()

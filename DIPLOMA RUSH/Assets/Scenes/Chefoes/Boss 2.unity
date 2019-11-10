@@ -2542,7 +2542,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1a232bf9e50e114084135dde63b18a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ProximaFase: 2
+  ProximaFase: 14
+  _FaltaMoedaOuItens: {fileID: 0}
+  _PassouFase: {fileID: 0}
+  _PassouPelasMoedas: {fileID: 0}
+  _PassouPelosColetaveis: {fileID: 0}
 --- !u!1001 &845664543
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3299,7 +3303,7 @@ PrefabInstance:
     - target: {fileID: 5002112817852346424, guid: 6c5454f482e50da47a75d4db49d35591,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.25997925
+      value: 0.25994873
       objectReference: {fileID: 0}
     - target: {fileID: 5002112817852346424, guid: 6c5454f482e50da47a75d4db49d35591,
         type: 3}
@@ -5213,6 +5217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tempoInicial: 200
+  _FimJogo: {fileID: 0}
 --- !u!114 &1831402725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6523,8 +6528,7 @@ PrefabInstance:
         type: 3}
       propertyPath: HitBox
       value: 
-      objectReference: {fileID: 7076774763213315159, guid: 172effac53c6fbe448fab24430ac2264,
-        type: 3}
+      objectReference: {fileID: 7102121970911988428}
     - target: {fileID: 668505969568398160, guid: a8abaaf974a32cb46b491af937a8e7a3,
         type: 3}
       propertyPath: ProxPosicao.Array.data[0]
@@ -6555,6 +6559,12 @@ PrefabInstance:
       propertyPath: ProxPosicao.Array.data[5]
       value: 
       objectReference: {fileID: 2079943938}
+    - target: {fileID: 668505969568398160, guid: a8abaaf974a32cb46b491af937a8e7a3,
+        type: 3}
+      propertyPath: Tiro
+      value: 
+      objectReference: {fileID: 7214980304534618003, guid: 4131c7b776a147c48971ef251c351b1a,
+        type: 3}
     - target: {fileID: 6516742350254967612, guid: a8abaaf974a32cb46b491af937a8e7a3,
         type: 3}
       propertyPath: ProxPosicao.Array.data[0]
@@ -6585,5 +6595,21 @@ PrefabInstance:
       propertyPath: ProxPosicao.Array.data[5]
       value: 
       objectReference: {fileID: 2079943938}
+    - target: {fileID: 1007653604922830325, guid: a8abaaf974a32cb46b491af937a8e7a3,
+        type: 3}
+      propertyPath: m_Name
+      value: HitBox
+      objectReference: {fileID: 0}
+    - target: {fileID: 6724262567353690004, guid: a8abaaf974a32cb46b491af937a8e7a3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8abaaf974a32cb46b491af937a8e7a3, type: 3}
+--- !u!1 &7102121970911988428 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6724262567353690004, guid: a8abaaf974a32cb46b491af937a8e7a3,
+    type: 3}
+  m_PrefabInstance: {fileID: 7102121970911988427}
+  m_PrefabAsset: {fileID: 0}
