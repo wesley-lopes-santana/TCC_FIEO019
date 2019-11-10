@@ -13,11 +13,13 @@ public class Teleporte : MonoBehaviour
     public  GameObject      _PassouFase;
     public  GameObject      _PassouPelasMoedas;
     public  GameObject      _PassouPelosColetaveis;
+    private Teleporte       _GameControllerTeleporte;
 
     // Start is called before the first frame update
     void Start()
     {
         _GameController = FindObjectOfType(typeof(GameController)) as GameController;
+        _GameControllerTeleporte = FindObjectOfType(typeof(Teleporte)) as Teleporte;
         if (ProximaFase == 6){
             minimoMoedas = 30;
             minimoItens = 3;
@@ -52,16 +54,19 @@ public class Teleporte : MonoBehaviour
     void OnTriggerEnter2D(Collider2D col)
     {
         if(col.gameObject.tag == "Player"){
-            if(PlayerController.itens == minimoItens){
-                Time.timeScale = 0;
+            if(ProximaFase == 5){
+                SceneManager.LoadScene(_GameControllerTeleporte.ProximaFase);
+            }
+            else if(PlayerController.itens == minimoItens){
                 _PassouFase.SetActive(true);
                 _PassouPelasMoedas.SetActive(false);
-            }else if(PlayerController.moedas >= minimoMoedas){
                 Time.timeScale = 0;
+            }else if(PlayerController.moedas >= minimoMoedas){                
                 PlayerController.moedas = PlayerController.moedas - minimoMoedas;
                 PassaValores.moedas = PlayerController.moedas;
                 _PassouFase.SetActive(true);
                 _PassouPelosColetaveis.SetActive(false);
+                Time.timeScale = 0;
             }else{
                 _FaltaMoedaOuItens.SetActive(true);
             }
