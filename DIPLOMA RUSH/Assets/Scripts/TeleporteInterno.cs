@@ -7,6 +7,7 @@ public class TeleporteInterno : MonoBehaviour
 
     public GameObject Portal;
     public GameObject Player;
+    public float addX;
 
 
     // Use this for initialization
@@ -32,7 +33,11 @@ public class TeleporteInterno : MonoBehaviour
 
     IEnumerator Teleport()
     {
-        yield return new WaitForSeconds(0.5f);
-        Player.transform.position = new Vector2(Portal.transform.position.x, Portal.transform.position.y);
+        yield return new WaitForSeconds(1.0f);
+        Player.transform.position = new Vector2(Portal.transform.position.x + addX , Portal.transform.position.y);
+        //addX serve para que player não nasca em cima do portal
+        // 0 = nasce em cima
+        // 1 ou mais = teleporta a direita
+        // -1 ou menos = teleporta a esquerda
     }
 }
