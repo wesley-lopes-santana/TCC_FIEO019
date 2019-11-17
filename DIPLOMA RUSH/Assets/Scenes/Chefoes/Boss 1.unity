@@ -1690,6 +1690,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tempoInicial: 200
+  _FimJogo: {fileID: 0}
 --- !u!114 &577350657
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5623,6 +5624,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ProximaFase: 9
+  _FaltaMoedaOuItens: {fileID: 0}
+  _PassouFase: {fileID: 0}
+  _PassouPelasMoedas: {fileID: 0}
+  _PassouPelosColetaveis: {fileID: 0}
 --- !u!4 &1919220692 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 236913523734718500, guid: 453b9161bb2dd544f90b7d3aeb93cf87,
@@ -6554,7 +6559,17 @@ PrefabInstance:
     - target: {fileID: 1297137187711237659, guid: a498d2e52c20e6b41be322669c544822,
         type: 3}
       propertyPath: m_Size.x
-      value: 0.32
+      value: 0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 1297137187711237659, guid: a498d2e52c20e6b41be322669c544822,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 1297137187711237659, guid: a498d2e52c20e6b41be322669c544822,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.06
       objectReference: {fileID: 0}
     - target: {fileID: 7584926453426756844, guid: a498d2e52c20e6b41be322669c544822,
         type: 3}
@@ -6635,6 +6650,26 @@ PrefabInstance:
         type: 3}
       propertyPath: estaOlhandoEsquerda
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4743645355072959294, guid: a498d2e52c20e6b41be322669c544822,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4743645355072959294, guid: a498d2e52c20e6b41be322669c544822,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.0001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4743645355072959294, guid: a498d2e52c20e6b41be322669c544822,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.0001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4743645355072959294, guid: a498d2e52c20e6b41be322669c544822,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.03
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a498d2e52c20e6b41be322669c544822, type: 3}

@@ -6605,6 +6605,21 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 5447051024169394410, guid: a8abaaf974a32cb46b491af937a8e7a3,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 5447051024169394410, guid: a8abaaf974a32cb46b491af937a8e7a3,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 5447051024169394410, guid: a8abaaf974a32cb46b491af937a8e7a3,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.06
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8abaaf974a32cb46b491af937a8e7a3, type: 3}
 --- !u!1 &7102121970911988428 stripped

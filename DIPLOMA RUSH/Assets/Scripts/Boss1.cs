@@ -30,6 +30,7 @@ public class Boss1 : MonoBehaviour
         slimeRb = GetComponent<Rigidbody2D>();
         slimeAnimator = GetComponent<Animator>();
         StartCoroutine("mexeChefe");
+        StartCoroutine("girachefe");
         
         
     }
@@ -40,26 +41,27 @@ public class Boss1 : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, ProxPosicao[contador].transform.position, velocidade * Time.deltaTime);
         StartCoroutine("mexeChefe");
 
-        if (transform.position.x > alvo.position.x && transform.localScale.x < 0){
-            Gira();
-        }else if(transform.position.x < alvo.position.x && transform.localScale.x > 0){
-            Gira();
-        }
+        // if (transform.position.x > alvo.position.x && transform.localScale.x < 0){
+        //     Gira();
+        // }else if(transform.position.x < alvo.position.x && transform.localScale.x > 0){
+        //     Gira();
+        // }
 
     }
 
     void OnTriggerEnter2D(Collider2D col){
         if(col.gameObject.tag == "hitBox")
-        {
+        {   
+            StartCoroutine("Pausachefe");
             _GameController.playSFX(_GameController.sfxEnemyDead, 0.32f);
             vidaChefe -= 1;
             if (vidaChefe == 2){
                 gameObject.GetComponent<SpriteRenderer> ().color = new Color(0.887f, 0.506f, 0.517f, 1.000f);
-                velocidade = 2f;
+                // velocidade = 2f;
             }
             if (vidaChefe == 1){
                 gameObject.GetComponent<SpriteRenderer> ().color = new Color(0.868f, 0.225f, 0.245f, 1.000f);
-                velocidade = 2.5f;
+                // velocidade = 2.5f;
             }
             if (vidaChefe == 0){
                 Destroy(HitBox);
@@ -86,5 +88,28 @@ public class Boss1 : MonoBehaviour
         float x = transform.localScale.x * -1; //Inverte o sinal do Transform -> Scale -> X
         transform.localScale = new Vector3(x, transform.localScale.y, transform.localScale.z);
     }
+
+    IEnumerator Pausachefe(){
+        velocidade = 0.25f;
+
+        yield return new WaitForSeconds(1.5f);
+        if (vidaChefe == 2){
+            velocidade = 2f;
+        }
+        if (vidaChefe == 1){
+            velocidade = 2.5f;
+        }
+    }
+
+    IEnumerator girachefe(){
+        if (transform.position.x > alvo.position.x && transform.localScale.x < 0){
+            Gira();
+        }else if(transform.position.x < alvo.position.x && transform.localScale.x > 0){
+            Gira();
+        }
+        yield return new WaitForSeconds(2.5f);
+        StartCoroutine("girachefe");
+    }
+
 }
 

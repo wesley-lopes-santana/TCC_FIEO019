@@ -36,6 +36,7 @@ public class Boss2 : MonoBehaviour
         slimeAnimator = GetComponent<Animator>();
         StartCoroutine("mexeChefe");
         StartCoroutine("Atirando");
+        StartCoroutine("girachefe");
     }
 
     // Update is called once per frame
@@ -44,11 +45,11 @@ public class Boss2 : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, ProxPosicao[contador].transform.position, velocidade * Time.deltaTime);
         StartCoroutine("mexeChefe");
 
-        if (transform.position.x > alvo.position.x && transform.localScale.x < 0){
-            Gira();
-        }else if(transform.position.x < alvo.position.x && transform.localScale.x > 0){
-            Gira();
-        }
+        // if (transform.position.x > alvo.position.x && transform.localScale.x < 0){
+        //     Gira();
+        // }else if(transform.position.x < alvo.position.x && transform.localScale.x > 0){
+        //     Gira();
+        // }
         
         
     }
@@ -96,15 +97,37 @@ public class Boss2 : MonoBehaviour
 
     IEnumerator Atirando(){
         GameObject tempPrefab = Instantiate(Tiro) as GameObject;
-        Destroy(tempPrefab, 10f);
-        yield return new WaitForSeconds(3);
+        Destroy(tempPrefab, 2f);
+        yield return new WaitForSeconds(2);
         StartCoroutine("Atirando");
+    }
+
+    IEnumerator Pausachefe(){
+        velocidade = 0.25f;
+
+        yield return new WaitForSeconds(1.5f);
+        if (vidaChefe == 2){
+            velocidade = 2.5f;
+        }
+        if (vidaChefe == 1){
+            velocidade = 3.5f;
+        }
     }
 
     void Gira()
     {
         float x = transform.localScale.x * -1; //Inverte o sinal do Transform -> Scale -> X
         transform.localScale = new Vector3(x, transform.localScale.y, transform.localScale.z);
+    }
+
+    IEnumerator girachefe(){
+        if (transform.position.x > alvo.position.x && transform.localScale.x < 0){
+            Gira();
+        }else if(transform.position.x < alvo.position.x && transform.localScale.x > 0){
+            Gira();
+        }
+        yield return new WaitForSeconds(2.5f);
+        StartCoroutine("girachefe");
     }
 }
 
