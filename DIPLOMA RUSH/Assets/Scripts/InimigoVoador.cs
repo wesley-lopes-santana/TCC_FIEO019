@@ -5,8 +5,9 @@ using UnityEngine;
 public class InimigoVoador : MonoBehaviour
 {
     
-    private GameController _GameController;
+    private GameController  _GameController;
     private Animator        _InimigoVoador;
+    public GameObject       _Player;
 
     private bool seguindo;
     public  GameObject      HitBox;
@@ -19,13 +20,19 @@ public class InimigoVoador : MonoBehaviour
         _GameController = FindObjectOfType(typeof(GameController)) as GameController;
 
         _InimigoVoador = GetComponent<Animator>();
+
+        _Player = GameObject.Find("Player");
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(seguindo == true)
+        if(seguindo == true && _Player.layer == 8)
         {
+            velocidade = 1.15f;
+            transform.position = Vector3.MoveTowards(transform.position, _GameController.playerTransform.position, velocidade * Time.deltaTime);
+        }else{
+            velocidade = 0f;
             transform.position = Vector3.MoveTowards(transform.position, _GameController.playerTransform.position, velocidade * Time.deltaTime);
         }
 
