@@ -5825,7 +5825,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 696350647}
-  m_Enabled: 0
+  m_Enabled: 1
 --- !u!20 &696350649
 Camera:
   m_ObjectHideFlags: 0
@@ -8656,7 +8656,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7ff0cf4323460d4ab62e4e792c89f10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Fase: {fileID: 0}
+  Fase: {fileID: 1627530571}
 --- !u!4 &1032747771 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4374658876494467508, guid: 7347750b393c28c4381af2b2002fc83d,
@@ -14183,9 +14183,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Fase: 3-1
-
-'
+  m_Text: 'Fase: 3-2'
 --- !u!222 &1627530574
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14750,10 +14748,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ProximaFase: 11
-  _FaltaMoedaOuItens: {fileID: 0}
-  _PassouFase: {fileID: 0}
-  _PassouPelasMoedas: {fileID: 0}
-  _PassouPelosColetaveis: {fileID: 0}
+  _FaltaMoedaOuItens: {fileID: 1685234546}
+  _PassouFase: {fileID: 655626042}
+  _PassouPelasMoedas: {fileID: 1937519604}
+  _PassouPelosColetaveis: {fileID: 1046564071}
 --- !u!1 &1737668511
 GameObject:
   m_ObjectHideFlags: 0

@@ -12490,10 +12490,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ProximaFase: 13
-  _FaltaMoedaOuItens: {fileID: 0}
-  _PassouFase: {fileID: 0}
-  _PassouPelasMoedas: {fileID: 0}
-  _PassouPelosColetaveis: {fileID: 0}
+  _FaltaMoedaOuItens: {fileID: 1164181462}
+  _PassouFase: {fileID: 388115378}
+  _PassouPelasMoedas: {fileID: 1870023271}
+  _PassouPelosColetaveis: {fileID: 149235760}
 --- !u!1001 &1446690228
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18511,9 +18511,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Fase: 3-1
-
-'
+  m_Text: 'Fase: 4-2'
 --- !u!222 &2094735099
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18757,7 +18755,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7ff0cf4323460d4ab62e4e792c89f10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Fase: {fileID: 0}
+  Fase: {fileID: 2094735096}
 --- !u!1001 &2119734084
 PrefabInstance:
   m_ObjectHideFlags: 0

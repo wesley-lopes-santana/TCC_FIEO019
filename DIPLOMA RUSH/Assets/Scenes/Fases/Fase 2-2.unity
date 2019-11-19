@@ -5456,10 +5456,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ProximaFase: 8
-  _FaltaMoedaOuItens: {fileID: 0}
-  _PassouFase: {fileID: 0}
-  _PassouPelasMoedas: {fileID: 0}
-  _PassouPelosColetaveis: {fileID: 0}
+  _FaltaMoedaOuItens: {fileID: 985386936}
+  _PassouFase: {fileID: 845741322}
+  _PassouPelasMoedas: {fileID: 1005680016}
+  _PassouPelosColetaveis: {fileID: 1869986328}
 --- !u!1 &724968643 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 236913523734718497, guid: 453b9161bb2dd544f90b7d3aeb93cf87,
@@ -16425,9 +16425,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Fase: 3-1
-
-'
+  m_Text: 'Fase: 2-2'
 --- !u!222 &1969521647
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17192,7 +17190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7ff0cf4323460d4ab62e4e792c89f10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Fase: {fileID: 0}
+  Fase: {fileID: 1969521644}
 --- !u!1001 &2078014753
 PrefabInstance:
   m_ObjectHideFlags: 0
