@@ -132,7 +132,6 @@ public class PlayerController : MonoBehaviour
             PassaValores.moedas = 0;
             PassaValores.hp = 3;
             SceneManager.LoadScene(_GameControllerTeleporte.ProximaFase-1);
-            
         }
 
         PlayerRb.velocity = new Vector2(lados*velocidade ,velocidadeY);
