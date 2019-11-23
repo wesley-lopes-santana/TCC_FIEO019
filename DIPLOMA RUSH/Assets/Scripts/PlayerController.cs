@@ -199,6 +199,7 @@ public class PlayerController : MonoBehaviour
             _SlimeIAMesmo.StopCoroutine("seguePlayer");
             _SlimeIAMesmo.StartCoroutine("seguePlayer");
         }
+		//O ESCOLHA1_2 ESTA SENDO USADO TANTO PARA O LIVRO NA FASE 1.2 QUANTO PRA BATATA NA 2.1
         else if(colider.gameObject.tag == "Escolha1_2")
         {   
             itens += 1;
