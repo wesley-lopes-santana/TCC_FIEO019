@@ -52,8 +52,10 @@
      <Compile Include="Assets\Scripts\ContaColetaveis.cs" />
      <Compile Include="Assets\Scripts\Contador.cs" />
      <Compile Include="Assets\Scripts\ContaMoedas.cs" />
+     <Compile Include="Assets\Scripts\ControlaFade.cs" />
      <Compile Include="Assets\Scripts\Destruir.cs" />
      <Compile Include="Assets\Scripts\EscolhaFase1_2.cs" />
+     <Compile Include="Assets\Scripts\EscolhaFase2_1.cs" />
      <Compile Include="Assets\Scripts\GameController.cs" />
      <Compile Include="Assets\Scripts\GameOver.cs" />
      <Compile Include="Assets\Scripts\InimigoVoador.cs" />

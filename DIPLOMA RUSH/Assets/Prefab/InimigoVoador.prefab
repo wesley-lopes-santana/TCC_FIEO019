@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 218927542030347506}
   - component: {fileID: 218927542030347505}
   - component: {fileID: 218927542030347504}
-  - component: {fileID: 218927542030347519}
-  m_Layer: 12
+  - component: {fileID: 2975584252048553680}
+  m_Layer: 15
   m_Name: InimigoVoador
   m_TagString: damage
   m_Icon: {fileID: 0}
@@ -97,7 +97,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 057c02f679db8074aa4757a1bc2aa16e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HitBox: {fileID: 0}
+  _Player: {fileID: 0}
+  HitBox: {fileID: 6532157505519332067}
   estaOlhandoEsquerda: 1
   velocidade: 1.15
 --- !u!50 &218927542030347505
@@ -140,8 +141,8 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!58 &218927542030347519
-CircleCollider2D:
+--- !u!70 &2975584252048553680
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -154,8 +155,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.16
+  m_Size: {x: 0.35, y: 0.9290909}
+  m_Direction: 0
 --- !u!1 &6532157505519332067
 GameObject:
   m_ObjectHideFlags: 0
@@ -165,8 +166,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7570235623213112889}
-  - component: {fileID: 3386274997850928805}
-  m_Layer: 12
+  - component: {fileID: 1496679752347239713}
+  m_Layer: 15
   m_Name: HitBox
   m_TagString: damage
   m_Icon: {fileID: 0}
@@ -187,8 +188,8 @@ Transform:
   m_Father: {fileID: 218927542030347507}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &3386274997850928805
-CircleCollider2D:
+--- !u!70 &1496679752347239713
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -201,5 +202,5 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.12}
-  serializedVersion: 2
-  m_Radius: 0.17470795
+  m_Size: {x: 0.29, y: 0.84}
+  m_Direction: 0

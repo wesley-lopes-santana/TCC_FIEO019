@@ -21,6 +21,7 @@ TagManager:
   - PerdeuJogo
   - PassouFase
   - Ladder
+  - BarraInimigo
   layers:
   - Default
   - TransparentFX
@@ -37,8 +38,8 @@ TagManager:
   - hitBoxInimigo
   - PlayerAtack
   - GroundCheck
-  - 
-  - 
+  - InimigoVoador
+  - BarraInimigo
   - 
   - 
   - 
