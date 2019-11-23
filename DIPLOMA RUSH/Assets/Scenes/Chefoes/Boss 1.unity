@@ -420,8 +420,12 @@ MonoBehaviour:
   _Escolha_Vini: {fileID: 0}
   velocidade: 2
   forcaPulo: 320
+  gravidadeInicial: 0
+  ganhouPulo: 0
+  puloExtra: 0
   estaOlhandoEsquerda: 0
   GroundCheck: {fileID: 573610778}
+  estaNaEscada: 0
   mao: {fileID: 1564634674}
   hitBoxPreFab: {fileID: 7076774763213315159, guid: 172effac53c6fbe448fab24430ac2264,
     type: 3}
@@ -6932,22 +6936,22 @@ PrefabInstance:
     - target: {fileID: 4743645355072959294, guid: a498d2e52c20e6b41be322669c544822,
         type: 3}
       propertyPath: m_Offset.x
-      value: 0
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 4743645355072959294, guid: a498d2e52c20e6b41be322669c544822,
         type: 3}
       propertyPath: m_Size.x
-      value: 0.0001
+      value: 0.37
       objectReference: {fileID: 0}
     - target: {fileID: 4743645355072959294, guid: a498d2e52c20e6b41be322669c544822,
         type: 3}
       propertyPath: m_Size.y
-      value: 0.0001
+      value: 0.84
       objectReference: {fileID: 0}
     - target: {fileID: 4743645355072959294, guid: a498d2e52c20e6b41be322669c544822,
         type: 3}
       propertyPath: m_Offset.y
-      value: 0.03
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a498d2e52c20e6b41be322669c544822, type: 3}

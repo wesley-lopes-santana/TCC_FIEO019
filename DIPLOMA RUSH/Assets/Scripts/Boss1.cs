@@ -10,7 +10,7 @@ public class Boss1 : MonoBehaviour
     private Rigidbody2D     slimeRb;
     private Animator        slimeAnimator;
     public  GameObject      HitBox;
-    
+    public static Transform   boss1_local;
 
     public float velocidade;
     public bool estaOlhandoEsquerda;
@@ -18,7 +18,7 @@ public class Boss1 : MonoBehaviour
     private  Teleporte       _GameControllerTeleporte;
 
     public static int contador = 0;
-    private int vidaChefe = 3;
+    private int vidaChefe = 10;
 
 
     // Start is called before the first frame update
@@ -27,6 +27,7 @@ public class Boss1 : MonoBehaviour
         _GameController = FindObjectOfType(typeof(GameController)) as GameController;
         _GameControllerTeleporte = FindObjectOfType(typeof(Teleporte)) as Teleporte;
         alvo = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        boss1_local = this.GetComponent<Transform>();
         slimeRb = GetComponent<Rigidbody2D>();
         slimeAnimator = GetComponent<Animator>();
         StartCoroutine("mexeChefe");
@@ -52,18 +53,28 @@ public class Boss1 : MonoBehaviour
     void OnTriggerEnter2D(Collider2D col){
         if(col.gameObject.tag == "hitBox")
         {   
-            StartCoroutine("Pausachefe");
-            _GameController.playSFX(_GameController.sfxEnemyDead, 0.32f);
+            if(alvo.position.x < boss1_local.position.x && boss1_local.localScale.x < 1){
+                vidaChefe -= 1;
+            }else if(alvo.position.x > boss1_local.position.x && boss1_local.localScale.x > 1){
+                vidaChefe -= 1;
+            }
             vidaChefe -= 1;
-            if (vidaChefe == 2){
+
+            StartCoroutine("Pausachefe");
+
+            if (vidaChefe <= 6 && vidaChefe >= 3){
                 gameObject.GetComponent<SpriteRenderer> ().color = new Color(0.887f, 0.506f, 0.517f, 1.000f);
-                // velocidade = 2f;
+                velocidade = 2.0f;
+            }
+            if (vidaChefe <= 3 && vidaChefe >= 1){
+                gameObject.GetComponent<SpriteRenderer> ().color = new Color(0.868f, 0.225f, 0.245f, 1.000f);
+                velocidade = 2.5f;
             }
             if (vidaChefe == 1){
                 gameObject.GetComponent<SpriteRenderer> ().color = new Color(0.868f, 0.225f, 0.245f, 1.000f);
-                // velocidade = 2.5f;
+                velocidade = 2.8f;
             }
-            if (vidaChefe == 0){
+            if (vidaChefe <= 0){
                 Destroy(HitBox);
                 gameObject.SetActive(false) ;
                 SceneManager.LoadScene(_GameControllerTeleporte.ProximaFase);
@@ -91,14 +102,18 @@ public class Boss1 : MonoBehaviour
 
     IEnumerator Pausachefe(){
         velocidade = 0.25f;
-
+        velocidade = 1.5f;
         yield return new WaitForSeconds(1.5f);
-        if (vidaChefe == 2){
-            velocidade = 2f;
+        if (vidaChefe <= 6 && vidaChefe >= 3){
+            velocidade = 2.0f;
         }
-        if (vidaChefe == 1){
+        if (vidaChefe <= 3 && vidaChefe >= 1){
             velocidade = 2.5f;
         }
+        if (vidaChefe == 1){
+            velocidade = 2.8f;
+        }
+        
     }
 
     IEnumerator girachefe(){
