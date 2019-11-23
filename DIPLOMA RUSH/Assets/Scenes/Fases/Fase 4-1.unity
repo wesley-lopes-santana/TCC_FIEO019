@@ -10890,6 +10890,8 @@ MonoBehaviour:
   velocidade: 2
   forcaPulo: 320
   gravidadeInicial: 0
+  ganhouPulo: 1
+  puloExtra: 0
   estaOlhandoEsquerda: 0
   GroundCheck: {fileID: 1107171818}
   estaNaEscada: 0

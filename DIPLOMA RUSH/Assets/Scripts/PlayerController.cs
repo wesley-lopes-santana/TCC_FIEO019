@@ -21,7 +21,8 @@ public class PlayerController : MonoBehaviour
     public  float               forcaPulo;
     private float               forcaPuloEscada;
     public float                gravidadeInicial;
-
+    public bool                 ganhouPulo = false;
+    public bool puloExtra;
     public  bool                estaOlhandoEsquerda;
     public  Transform           GroundCheck;    
     private bool                estaNoChao;
@@ -116,12 +117,25 @@ public class PlayerController : MonoBehaviour
         float velocidadeY = PlayerRb.velocity.y;
 
         if (Input.GetButtonDown("Jump") && estaNoChao == true)
-        {   
+        {
             _GameController.playSFX(_GameController.sfxJump, 0.3f);
             PlayerRb.AddForce(new Vector2(0, forcaPulo));
+            puloExtra = true;
         }
 
-        if(Input.GetButtonDown("Fire1"))
+
+        if (ganhouPulo)
+        {
+            if (Input.GetButtonDown("Jump") && puloExtra == true && estaNoChao == false)
+            {
+                _GameController.playSFX(_GameController.sfxJump, 0.3f);
+                velocidadeY = 0;
+                PlayerRb.AddForce(new Vector2(0, forcaPulo));
+                puloExtra = false;
+            }
+        }
+
+        if (Input.GetButtonDown("Fire1"))
         {   
             _GameController.playSFX(_GameController.sfxAtack, 0.3f);
             estaAtacando = true;
