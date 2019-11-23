@@ -17291,8 +17291,10 @@ MonoBehaviour:
   _Escolha_Vini: {fileID: 179021421}
   velocidade: 2
   forcaPulo: 320
+  gravidadeInicial: 0
   estaOlhandoEsquerda: 0
   GroundCheck: {fileID: 1282954295}
+  estaNaEscada: 0
   mao: {fileID: 1092440685}
   hitBoxPreFab: {fileID: 7076774763213315159, guid: 172effac53c6fbe448fab24430ac2264,
     type: 3}

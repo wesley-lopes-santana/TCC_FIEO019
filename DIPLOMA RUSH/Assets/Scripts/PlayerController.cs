@@ -19,11 +19,15 @@ public class PlayerController : MonoBehaviour
 
     public  float               velocidade;
     public  float               forcaPulo;
+    private float               forcaPuloEscada;
+    public float                gravidadeInicial;
 
     public  bool                estaOlhandoEsquerda;
-    public  Transform           GroundCheck;
+    public  Transform           GroundCheck;    
     private bool                estaNoChao;
     private bool                morreu;
+    public bool                 estaNaEscada;
+    
 
     private bool                estaAtacando;
     public  Transform           mao;   
@@ -61,6 +65,7 @@ public class PlayerController : MonoBehaviour
         _SlimeIAMesmo = FindObjectOfType(typeof(slimeIAMesmo)) as slimeIAMesmo;
 
         itens = 0;
+        gravidadeInicial = PlayerRb.gravityScale;
 
         if(PassaValores.hp != 0){
             maxHp = PassaValores.hp;
@@ -149,6 +154,15 @@ public class PlayerController : MonoBehaviour
 				coracoes[i].enabled = false;
 			}
 		}
+        if (estaNaEscada)
+        {
+            PlayerRb.gravityScale = 0;
+
+        }
+        else
+        {
+            PlayerRb.gravityScale = gravidadeInicial;
+        }
     }
 
 
@@ -198,6 +212,15 @@ public class PlayerController : MonoBehaviour
         }
         PassaValores.hp = maxHp;
         PassaValores.moedas = moedas;
+
+        if (colider.gameObject.tag == "Ladder")
+        {
+            estaNaEscada = true;
+            forcaPuloEscada = forcaPulo;
+            forcaPulo = 150;
+      
+        }
+   
     }
 
     void OnCollisionEnter2D(Collision2D colider) {
@@ -229,6 +252,13 @@ public class PlayerController : MonoBehaviour
             print("saas");
             _SlimeIAMesmo.StopCoroutine("seguePlayer");
             _SlimeIAMesmo.StartCoroutine("SlimeWalk");
+        }
+        if (colider2.gameObject.tag == "Ladder")
+        {
+            estaNaEscada = false;
+            PlayerRb.velocity = new Vector2(PlayerRb.velocity.x, 0);
+            forcaPulo = forcaPuloEscada;
+
         }
     }
 

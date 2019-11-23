@@ -20,6 +20,7 @@ TagManager:
   - AvisoFimFase
   - PerdeuJogo
   - PassouFase
+  - Ladder
   layers:
   - Default
   - TransparentFX
