@@ -21,8 +21,8 @@ public class EscolhaFase2_1 : MonoBehaviour
     void Update()
     {
         if(clickOpc1 == true){
+			Time.timeScale = 1;
             if(PlayerController.maxHp <- 2 ){
-				Time.timeScale = 1;
 				PlayerController.maxHp = 3;
 			}
             _Escolha.SetActive(false);

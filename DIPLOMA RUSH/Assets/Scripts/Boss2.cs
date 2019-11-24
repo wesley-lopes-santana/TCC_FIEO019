@@ -22,7 +22,7 @@ public class Boss2 : MonoBehaviour
     private  Teleporte       _GameControllerTeleporte;
 
     private int contador = 0;
-    private int vidaChefe = 10;
+    private int vidaChefe = 1;
     private int de_costas;
 
 
@@ -90,9 +90,10 @@ public class Boss2 : MonoBehaviour
                 velocidade = 3.5f;
             }
             if (vidaChefe <= 0){
-                SceneManager.LoadScene(2);
                 Destroy(HitBox);
-                gameObject.SetActive(false) ;
+                gameObject.SetActive(false);
+                PassouFase.passou = true;
+                ControlaFade.Fade(true, 2f);
             }            
         }
     }

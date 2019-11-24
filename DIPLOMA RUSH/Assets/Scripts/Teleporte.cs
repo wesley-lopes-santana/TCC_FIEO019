@@ -18,14 +18,16 @@ public class Teleporte : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        PassouFase.passou = false;
+
         _GameController = FindObjectOfType(typeof(GameController)) as GameController;
         _GameControllerTeleporte = FindObjectOfType(typeof(Teleporte)) as Teleporte;
         if (ProximaFase == 6){
             minimoMoedas = 30;
-            minimoItens = 3;
+            minimoItens = 0;
         }else if(ProximaFase == 7){
             minimoMoedas = 30;
-            minimoItens = 1;
+            minimoItens = 2;
         }else if(ProximaFase == 8){
             minimoMoedas = 30;
             minimoItens = 2;
@@ -34,20 +36,22 @@ public class Teleporte : MonoBehaviour
             minimoItens = 2;
         }else if(ProximaFase == 11){
             minimoMoedas = 30;
-            minimoItens = 1;
+            minimoItens = 2;
         }else if(ProximaFase == 12){
             minimoMoedas = 30;
             minimoItens = 2;
         }else if(ProximaFase == 13){
             minimoMoedas = 30;
-            minimoItens = 1;
+            minimoItens = 2;
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(PassouFase.passou == true){
+            StartCoroutine("Transicao_Fases");
+        }
     }
 
 
@@ -55,7 +59,7 @@ public class Teleporte : MonoBehaviour
     {
         if(col.gameObject.tag == "Player"){
             if(ProximaFase == 5){
-                SceneManager.LoadScene(_GameControllerTeleporte.ProximaFase);
+                StartCoroutine("Transicao");
             }
             else if(PlayerController.itens == minimoItens){
                 _PassouFase.SetActive(true);
@@ -79,5 +83,17 @@ public class Teleporte : MonoBehaviour
             _FaltaMoedaOuItens.SetActive(false);
         }
         
+    }
+
+    IEnumerator Transicao(){
+        ControlaFade.Fade(true, 2f);
+        yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene(_GameControllerTeleporte.ProximaFase);
+    }
+
+    public IEnumerator Transicao_Fases(){
+        Time.timeScale = 1;
+        yield return new WaitForSeconds(2.0f);
+        SceneManager.LoadScene(_GameControllerTeleporte.ProximaFase);  
     }
 }

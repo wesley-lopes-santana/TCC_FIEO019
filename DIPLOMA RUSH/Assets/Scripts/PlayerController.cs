@@ -67,7 +67,8 @@ public class PlayerController : MonoBehaviour
 
         itens = 0;
         gravidadeInicial = PlayerRb.gravityScale;
-
+        ganhouPulo = false;
+        forcaPulo = 320;
         if(PassaValores.hp != 0){
             maxHp = PassaValores.hp;
         }
@@ -124,7 +125,7 @@ public class PlayerController : MonoBehaviour
         }
 
 
-        if (ganhouPulo)
+        if (ganhouPulo == true)
         {
             if (Input.GetButtonDown("Jump") && puloExtra == true && estaNoChao == false)
             {
@@ -220,6 +221,13 @@ public class PlayerController : MonoBehaviour
         }
         else if(colider.gameObject.tag == "Itens")
         {
+            _GameController.playSFX(_GameController.sfxCoin, 0.5f);
+            itens += 1;
+            Destroy(colider.gameObject);
+        }else if(colider.gameObject.tag == "PuloExtra")
+        {   
+            ganhouPulo = true;
+            forcaPulo = 250;
             _GameController.playSFX(_GameController.sfxCoin, 0.5f);
             itens += 1;
             Destroy(colider.gameObject);

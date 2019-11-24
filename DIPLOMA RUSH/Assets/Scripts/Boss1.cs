@@ -76,8 +76,10 @@ public class Boss1 : MonoBehaviour
             }
             if (vidaChefe <= 0){
                 Destroy(HitBox);
-                gameObject.SetActive(false) ;
-                SceneManager.LoadScene(_GameControllerTeleporte.ProximaFase);
+                gameObject.SetActive(false);
+                PassouFase.passou = true;
+                ControlaFade.Fade(true, 2f);
+                
             }
             
         }

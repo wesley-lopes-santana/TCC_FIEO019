@@ -22,7 +22,6 @@ public class EscolhaFase1_2 : MonoBehaviour
     void Update()
     {
         if(clickOpc1 == true){
-            print("cu");
             int i = 0;
             Time.timeScale = 1;
             foreach(string tipo in lista_tag){
@@ -37,7 +36,6 @@ public class EscolhaFase1_2 : MonoBehaviour
             _Escolha.SetActive(false);
 		}
 		else if(clickOpc2 == true){
-			print("cu2");
             int i = 0;
             Time.timeScale = 1;
             foreach(string tipo in lista_tag){

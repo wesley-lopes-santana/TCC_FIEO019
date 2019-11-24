@@ -22,6 +22,7 @@ TagManager:
   - PassouFase
   - Ladder
   - BarraInimigo
+  - PuloExtra
   layers:
   - Default
   - TransparentFX

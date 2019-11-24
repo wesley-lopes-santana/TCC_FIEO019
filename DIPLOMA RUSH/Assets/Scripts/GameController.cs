@@ -27,6 +27,7 @@ public class GameController : MonoBehaviour
     void Start()
     {
         cam = Camera.main;
+        StartCoroutine("Transicao");
     }
 
     // Update is called once per frame
@@ -78,6 +79,12 @@ public class GameController : MonoBehaviour
     public void playSFX(AudioClip sfxClip, float volume)
     {
         sfxSource.PlayOneShot(sfxClip, volume);
+    }
+
+    IEnumerator Transicao(){
+        ControlaFade.Fade(false, 2f);
+        yield return new WaitForSeconds(1f);
+        
     }
 
 }

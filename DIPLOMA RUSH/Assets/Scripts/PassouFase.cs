@@ -7,11 +7,13 @@ public class PassouFase : MonoBehaviour
 {   
     private     bool                clickOpc1;
     private     Teleporte           _GameControllerTeleporte;
-    public      GameObject          _PassouFase;      
+    public      GameObject          _PassouFase;   
+    public     static bool          passou = false; 
 
     // Start is called before the first frame update
     void Start()
     {
+        passou = false;
         _GameControllerTeleporte = FindObjectOfType(typeof(Teleporte)) as Teleporte;
     }
 
@@ -19,14 +21,23 @@ public class PassouFase : MonoBehaviour
     void Update()
     {
         if(clickOpc1 == true){
-            Time.timeScale = 1;
-            _PassouFase.SetActive(false);
-            SceneManager.LoadScene(_GameControllerTeleporte.ProximaFase);
+            StartCoroutine ("Transicao");
 		}
+        
     }
 
 
     public void clickOpcao1(bool click){
 		clickOpc1 = true;
 	}
+
+    
+    public  IEnumerator Transicao(){
+        Time.timeScale = 1;
+        ControlaFade.Fade(true, 2f);
+        passou = true;
+        _PassouFase.SetActive(false);
+        yield return new WaitForSeconds(1.0f);
+
+    }
 }
