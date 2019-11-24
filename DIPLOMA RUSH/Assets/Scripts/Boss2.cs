@@ -22,7 +22,7 @@ public class Boss2 : MonoBehaviour
     private  Teleporte       _GameControllerTeleporte;
 
     private int contador = 0;
-    private int vidaChefe = 1;
+    private int vidaChefe = 10;
     private int de_costas;
 
 
