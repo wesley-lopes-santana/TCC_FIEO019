@@ -50,14 +50,11 @@ public class InimigoVoador : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col){
         if(col.gameObject.tag == "hitBox"){
-            print("a");
-            print("cur");
             Destroy(HitBox);
             _GameController.playSFX(_GameController.sfxEnemyDead, 0.32f);
             _InimigoVoador.SetTrigger("morto");
         }
         if(col.gameObject.tag == "hitBox"){
-            print("cur");
             Destroy(HitBox);
             _GameController.playSFX(_GameController.sfxEnemyDead, 0.32f);
             _InimigoVoador.SetTrigger("morto");

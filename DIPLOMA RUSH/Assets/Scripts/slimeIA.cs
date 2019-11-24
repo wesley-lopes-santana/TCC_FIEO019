@@ -54,8 +54,16 @@ public class slimeIA : MonoBehaviour
             Destroy(HitBox);
             _GameController.playSFX(_GameController.sfxEnemyDead, 0.32f);
             slimeAnimator.SetTrigger("morto");
+        }else if(col.gameObject.tag == "BarraInimigo")
+        {
+            if(lados == -1){
+                lados = 1;
+            }else if(lados == 1){
+                lados = -1;
+            }
         }
     }
+    
 
     IEnumerator SlimeWalk()
     {

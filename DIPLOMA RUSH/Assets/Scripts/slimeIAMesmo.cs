@@ -70,6 +70,13 @@ public class slimeIAMesmo : MonoBehaviour
             _GameController.playSFX(_GameController.sfxEnemyDead, 0.32f);
             slimeAnimator.SetTrigger("morto");
             Destroy(HitBox);
+        }else if(col.gameObject.tag == "BarraInimigo")
+        {
+            if(lados == -1){
+                lados = 1;
+            }else if(lados == 1){
+                lados = -1;
+            }
         }
         // else if(col.gameObject.tag == "Player")
         // {   
