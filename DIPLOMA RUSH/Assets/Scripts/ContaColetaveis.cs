@@ -15,7 +15,7 @@ public class ContaColetaveis : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        texto.text = "" + (Mathf.Round(PlayerController.itens).ToString());
+        texto.text = "0" + (Mathf.Round(PlayerController.itens).ToString());
     }
 
 }

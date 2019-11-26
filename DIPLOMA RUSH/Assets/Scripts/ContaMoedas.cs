@@ -15,7 +15,10 @@ public class ContaMoedas : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        texto.text = "" + (Mathf.Round(PlayerController.moedas).ToString());
+        texto.text = "0" + (Mathf.Round(PlayerController.moedas).ToString());
+		if(PlayerController.moedas > 9){
+			texto.text = "" + (Mathf.Round(PlayerController.moedas).ToString());
+		}
     }
 
 }
