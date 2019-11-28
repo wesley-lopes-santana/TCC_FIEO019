@@ -7,7 +7,7 @@ public class TeleporteInterno : MonoBehaviour
 
     public GameObject Portal;
     public GameObject Player;
-    public float addX = 1.0f;
+    public float addX = 0;
 
 
     // Use this for initialization
