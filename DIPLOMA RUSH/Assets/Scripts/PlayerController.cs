@@ -143,7 +143,7 @@ public class PlayerController : MonoBehaviour
             PlayerAnimator.SetTrigger("ataque");
         }
 
-        if(maxHp == 0){
+        if(maxHp <= 0){
             PassaValores.moedas = 0;
             PassaValores.hp = 3;
             SceneManager.LoadScene(_GameControllerTeleporte.ProximaFase-1);

@@ -24,7 +24,7 @@ public class Teleporte : MonoBehaviour
         _GameControllerTeleporte = FindObjectOfType(typeof(Teleporte)) as Teleporte;
         if (ProximaFase == 6){
             minimoMoedas = 30;
-            minimoItens = 0;
+            minimoItens = 2;
         }else if(ProximaFase == 7){
             minimoMoedas = 30;
             minimoItens = 2;
@@ -51,6 +51,9 @@ public class Teleporte : MonoBehaviour
     {
         if(PassouFase.passou == true){
             StartCoroutine("Transicao_Fases");
+        }
+        if(Boss2.passouUltimoBoss == true){
+            StartCoroutine("Transicao_Ultima_Fase");
         }
     }
 
@@ -95,5 +98,10 @@ public class Teleporte : MonoBehaviour
         Time.timeScale = 1;
         yield return new WaitForSeconds(2.0f);
         SceneManager.LoadScene(_GameControllerTeleporte.ProximaFase);  
+    }
+    public IEnumerator Transicao_Ultima_Fase(){
+        Time.timeScale = 1;
+        yield return new WaitForSeconds(2.0f);
+        SceneManager.LoadScene(2);  
     }
 }

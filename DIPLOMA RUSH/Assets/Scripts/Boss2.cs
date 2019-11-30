@@ -13,7 +13,8 @@ public class Boss2 : MonoBehaviour
     public  float           rateSpawn;
     public  GameObject      Tiro;
     private Vector3         destino;
-    public static Transform   boss2_local;
+    public static Transform boss2_local;
+    public static bool      passouUltimoBoss;
     
 
     public float velocidade;
@@ -92,7 +93,7 @@ public class Boss2 : MonoBehaviour
             if (vidaChefe <= 0){
                 Destroy(HitBox);
                 gameObject.SetActive(false);
-                PassouFase.passou = true;
+                passouUltimoBoss = true;
                 ControlaFade.Fade(true, 2f);
             }            
         }

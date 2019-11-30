@@ -1830,6 +1830,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Pausa: {fileID: 1749439659}
+  _Pause: {fileID: 0}
+  PauseText: {fileID: 0}
+  CoracoesMauro: {fileID: 0}
+  Moedas: {fileID: 0}
+  Coletaveis: {fileID: 0}
+  Contador: {fileID: 0}
 --- !u!1 &408178658
 GameObject:
   m_ObjectHideFlags: 0
@@ -2938,7 +2944,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1a232bf9e50e114084135dde63b18a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ProximaFase: 2
+  ProximaFase: 14
   _FaltaMoedaOuItens: {fileID: 0}
   _PassouFase: {fileID: 0}
   _PassouPelasMoedas: {fileID: 0}
@@ -4973,6 +4979,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Pausa: {fileID: 1749439659}
+  _Pause: {fileID: 0}
+  PauseText: {fileID: 0}
+  CoracoesMauro: {fileID: 0}
+  Moedas: {fileID: 0}
+  Coletaveis: {fileID: 0}
+  Contador: {fileID: 0}
 --- !u!114 &1683246067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5989,6 +6001,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Pausa: {fileID: 1749439659}
+  _Pause: {fileID: 0}
+  PauseText: {fileID: 0}
+  CoracoesMauro: {fileID: 0}
+  Moedas: {fileID: 0}
+  Coletaveis: {fileID: 0}
+  Contador: {fileID: 0}
 --- !u!114 &1846975656
 MonoBehaviour:
   m_ObjectHideFlags: 0
