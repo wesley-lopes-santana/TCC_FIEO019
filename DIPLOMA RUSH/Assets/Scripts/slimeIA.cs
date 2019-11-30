@@ -50,7 +50,8 @@ public class slimeIA : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col){
         if(col.gameObject.tag == "hitBox")
-        {
+        {   
+            lados = 0;
             Destroy(HitBox);
             _GameController.playSFX(_GameController.sfxEnemyDead, 0.32f);
             slimeAnimator.SetTrigger("morto");

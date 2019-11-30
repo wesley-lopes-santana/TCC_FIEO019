@@ -143,7 +143,7 @@ public class PlayerController : MonoBehaviour
             PlayerAnimator.SetTrigger("ataque");
         }
 
-        if(maxHp <= 0){
+        if(maxHp == 0){
             PassaValores.moedas = 0;
             PassaValores.hp = 3;
             SceneManager.LoadScene(_GameControllerTeleporte.ProximaFase-1);
@@ -195,11 +195,6 @@ public class PlayerController : MonoBehaviour
         {
             StartCoroutine("damageController");
         }
-        else if(colider.gameObject.tag == "viu player")
-        {   
-            _SlimeIAMesmo.StopCoroutine("seguePlayer");
-            _SlimeIAMesmo.StartCoroutine("seguePlayer");
-        }
 		//O ESCOLHA1_2 ESTA SENDO USADO TANTO PARA O LIVRO NA FASE 1.2 QUANTO PRA BATATA NA 2.1
         else if(colider.gameObject.tag == "Escolha1_2")
         {   
@@ -240,9 +235,7 @@ public class PlayerController : MonoBehaviour
             estaNaEscada = true;
             forcaPuloEscada = forcaPulo;
             forcaPulo = 150;
-      
         }
-   
     }
 
     void OnCollisionEnter2D(Collision2D colider) {
@@ -269,12 +262,6 @@ public class PlayerController : MonoBehaviour
     }
 
     void OnTriggerExit2D(Collider2D colider2) {
-        if(colider2.gameObject.tag == "viu player")
-        {   
-            print("saas");
-            _SlimeIAMesmo.StopCoroutine("seguePlayer");
-            _SlimeIAMesmo.StartCoroutine("SlimeWalk");
-        }
         if (colider2.gameObject.tag == "Ladder")
         {
             estaNaEscada = false;

@@ -78,14 +78,22 @@ public class slimeIAMesmo : MonoBehaviour
                 lados = -1;
             }
         }
-        // else if(col.gameObject.tag == "Player")
-        // {   
-        //     //StopCoroutine("SlimeWalk");
-        //     // print(rotinaSlimeAnda);
-        //     StopCoroutine("seguePlayer");
-        //     StartCoroutine("seguePlayer");
-        //     Destroy(viuplayer);
-        // }
+        else if(col.gameObject.tag == "Player")
+        {   
+            //StopCoroutine("SlimeWalk");
+            // print(rotinaSlimeAnda);
+            StopCoroutine("seguePlayer");
+            StartCoroutine("seguePlayer");
+            // Destroy(viuplayer);
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D col) {
+        if(col.gameObject.tag == "Player")
+        {   
+            StopCoroutine("seguePlayer");
+            StartCoroutine("SlimeWalk");
+        }
     }
 
     IEnumerator SlimeWalk()
@@ -109,6 +117,9 @@ public class slimeIAMesmo : MonoBehaviour
         StartCoroutine("SlimeWalk");
     }
     
+
+
+
     IEnumerator seguePlayer()
     {   
         
