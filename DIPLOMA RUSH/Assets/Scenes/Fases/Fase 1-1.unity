@@ -2920,7 +2920,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 462783542}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 22.007, y: 2.65, z: 0}
+  m_LocalPosition: {x: 10.982, y: 2.65, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1199287891}
@@ -2969,7 +2969,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 73.93687, y: 7.2}
+  m_Size: {x: 51.886806, y: 7.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -3444,7 +3444,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 521118262}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 21.905, y: -0.781, z: 0}
+  m_LocalPosition: {x: 10.788, y: -0.781, z: 0}
   m_LocalScale: {x: 0.48999995, y: 0.29, z: 1}
   m_Children: []
   m_Father: {fileID: 470438393}
@@ -3493,7 +3493,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 150.84479, y: 12.047999}
+  m_Size: {x: 105.469666, y: 12.047999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -3603,7 +3603,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 559488528}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 22.421, y: 0.506, z: 0}
+  m_LocalPosition: {x: 11.258, y: 0.506, z: 0}
   m_LocalScale: {x: 0.27521968, y: 0.23016888, z: 1}
   m_Children: []
   m_Father: {fileID: 875685355}
@@ -3652,7 +3652,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 264.31808, y: 11.992149}
+  m_Size: {x: 183.1986, y: 11.992149}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -9003,7 +9003,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1740673646}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 21.916, y: 0.288, z: 0}
+  m_LocalPosition: {x: 10.569, y: 0.288, z: 0}
   m_LocalScale: {x: 0.14696741, y: 0.16429944, z: 1}
   m_Children: []
   m_Father: {fileID: 2008635430}
@@ -9052,7 +9052,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 503.44705, y: 20.210526}
+  m_Size: {x: 349.0374, y: 20.210526}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
