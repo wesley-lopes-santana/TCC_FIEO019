@@ -8,8 +8,8 @@ public class EscolhaFase1_2 : MonoBehaviour
 	private bool                clickOpc2;
     public  GameObject          _Escolha;
     public  GameObject[]        _Todos_GameObjects;
-    public static string[] lista_tag = new string[8] {"hitBox","Coletavel","ground","plataformaMeche","Buraco",
-                                            "Escolha1_2","Player","Untagged"};
+    public static string[] lista_tag = new string[9] {"hitBox","Coletavel","ground","plataformaMeche","Buraco",
+                                            "Escolha1_2","Player","Untagged", "BarraInimigo"};
 
     // Start is called before the first frame update
     void Start()

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5868004438592551921}
   - component: {fileID: 5868004438592551695}
   m_Layer: 0
-  m_Name: castle_tileset_part2_79
+  m_Name: Escada
   m_TagString: Ladder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -70,7 +70,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 88088266112436092, guid: 39778076645b44c4c9c8a168962786e5, type: 3}
+  m_Sprite: {fileID: -8729881625419622333, guid: 220974f9b87662644aad3a97d6cf0e10,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -94,16 +95,16 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0018621013, y: 0.013286725}
+  m_Offset: {x: 0.0018620491, y: -0.003166899}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.26, y: 0.93}
+    oldSize: {x: 0.38542742, y: 0.96133333}
     newSize: {x: 0.26, y: 0.93}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.18924083, y: 0.83807063}
+  m_Size: {x: 0.25009206, y: 0.8709779}
   m_EdgeRadius: 0

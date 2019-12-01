@@ -7,7 +7,6 @@ public class Boss1 : MonoBehaviour
 {
     public GameObject[] ProxPosicao;
     private Transform       alvo;
-    private Rigidbody2D     slimeRb;
     public  GameObject      HitBox;
     public static Transform   boss1_local;
     private Animator        boss1Animator;
@@ -29,7 +28,6 @@ public class Boss1 : MonoBehaviour
         _GameControllerTeleporte = FindObjectOfType(typeof(Teleporte)) as Teleporte;
         alvo = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         boss1_local = this.GetComponent<Transform>();
-        slimeRb = GetComponent<Rigidbody2D>();
         
         StartCoroutine("mexeChefe");
         StartCoroutine("girachefe");

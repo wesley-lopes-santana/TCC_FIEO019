@@ -231,6 +231,8 @@ public class PlayerController : MonoBehaviour
         if (colider.gameObject.tag == "Ladder")
         {
             estaNaEscada = true;
+            PlayerAnimator.SetTrigger("escalando2");
+            PlayerAnimator.SetBool("escalando",estaNaEscada);
             forcaPuloEscada = forcaPulo;
             forcaPulo = 150;
         }
@@ -263,6 +265,7 @@ public class PlayerController : MonoBehaviour
         if (colider2.gameObject.tag == "Ladder")
         {
             estaNaEscada = false;
+            PlayerAnimator.SetBool("escalando",estaNaEscada);
             PlayerRb.velocity = new Vector2(PlayerRb.velocity.x, 0);
             forcaPulo = forcaPuloEscada;
 

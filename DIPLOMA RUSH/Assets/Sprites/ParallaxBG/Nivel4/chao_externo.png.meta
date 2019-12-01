@@ -1,0 +1,619 @@
+fileFormatVersion: 2
+guid: ba4532066755bf44c9ef7ae7bacc7919
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7198461095109416946
+    second: chao_externo_0
+  - first:
+      213: 627697504024358056
+    second: chao_externo_1
+  - first:
+      213: 3495288627392461657
+    second: chao_externo_2
+  - first:
+      213: -4156796898254952528
+    second: chao_externo_3
+  - first:
+      213: 9064351763589250367
+    second: chao_externo_4
+  - first:
+      213: 4932539052211064283
+    second: chao_externo_5
+  - first:
+      213: 1064128198905143345
+    second: chao_externo_6
+  - first:
+      213: 7220702366354818847
+    second: chao_externo_7
+  - first:
+      213: -1881995908572237220
+    second: chao_externo_8
+  - first:
+      213: -6585437350482594969
+    second: chao_externo_9
+  - first:
+      213: -292976226950419018
+    second: chao_externo_10
+  - first:
+      213: -6388836562342884432
+    second: chao_externo_11
+  - first:
+      213: -1971209292547363333
+    second: chao_externo_12
+  - first:
+      213: -8809900249580096481
+    second: chao_externo_13
+  - first:
+      213: 4042912477091599326
+    second: chao_externo_14
+  - first:
+      213: -7166028688615870183
+    second: chao_externo_15
+  - first:
+      213: 8411607452695921836
+    second: chao_externo_16
+  - first:
+      213: 2813839412383220374
+    second: chao_externo_17
+  - first:
+      213: -7179019957894120303
+    second: chao_externo_18
+  - first:
+      213: -2356551478141466308
+    second: chao_externo_19
+  - first:
+      213: -9218239759959108154
+    second: chao_externo_20
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 760
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: chao_externo_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1536
+        width: 614.4
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59309b60fcc4a544bb96ea8fb6130d21
+      internalID: -7198461095109416946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chao_externo_1
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 1536
+        width: 614.4
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8054c4b9612d34843b6b8efafa93f070
+      internalID: 627697504024358056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chao_externo_2
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 1536
+        width: 614.4
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd216c3e68c8ca840a13a118ce7360ce
+      internalID: 3495288627392461657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chao_externo_3
+      rect:
+        serializedVersion: 2
+        x: 1842
+        y: 1536
+        width: 614.4
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 379ba4a91e9b4344eab914d9540fbbbf
+      internalID: -4156796898254952528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chao_externo_4
+      rect:
+        serializedVersion: 2
+        x: 2456
+        y: 1536
+        width: 614.4
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c627596c295ff8b4c9632e2d62b9d9a5
+      internalID: 9064351763589250367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chao_externo_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1152
+        width: 614.4
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c511f60ef7ed34b449a04a8bed256482
+      internalID: 4932539052211064283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chao_externo_6
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 1152
+        width: 614.4
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dc686631f445ef49b4cef5e52081d71
+      internalID: 1064128198905143345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chao_externo_7
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 1152
+        width: 614.4
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ddda41687104eb4487b6ef299ebb027
+      internalID: 7220702366354818847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chao_externo_8
+      rect:
+        serializedVersion: 2
+        x: 1842
+        y: 1152
+        width: 614.4
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b39bb000889f86448a86dc8c577607ed
+      internalID: -1881995908572237220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chao_externo_9
+      rect:
+        serializedVersion: 2
+        x: 2456
+        y: 1152
+        width: 614.4
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c45773cb81b69147bfe9a90ba2f242d
+      internalID: -6585437350482594969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chao_externo_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 614.4
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7735c98997580304a9ae59823b754e42
+      internalID: -292976226950419018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chao_externo_11
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 768
+        width: 614.4
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d96757d3204b814c89473120424fb43
+      internalID: -6388836562342884432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chao_externo_12
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 768
+        width: 614.4
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 369dea9cada69984e857d7cfa897c9da
+      internalID: -1971209292547363333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chao_externo_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 614.4
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50c0df841f24ff04aafb7aa15b8f611e
+      internalID: -8809900249580096481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chao_externo_14
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 384
+        width: 614.4
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f3653659355e8c47abe87e003b80a72
+      internalID: 4042912477091599326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chao_externo_15
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 384
+        width: 614.4
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5b7e8a6e5109a44a8c2cca86c018629
+      internalID: -7166028688615870183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chao_externo_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 614.4
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bb73d5e9baea4946b448d28a73930d5
+      internalID: 8411607452695921836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chao_externo_17
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 0
+        width: 614.4
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f80c674936bdb464a81c9609bc184a94
+      internalID: 2813839412383220374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chao_externo_18
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 0
+        width: 614.4
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab56eadae346e8648bca8c1d44ffede0
+      internalID: -7179019957894120303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chao_externo_19
+      rect:
+        serializedVersion: 2
+        x: 1842
+        y: 0
+        width: 614.4
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 218f903777a98c9469d2bcc4525c9260
+      internalID: -2356551478141466308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chao_externo_20
+      rect:
+        serializedVersion: 2
+        x: 2456
+        y: 0
+        width: 614.4
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8cc5a777c78f7b42a234d0651040f6b
+      internalID: -9218239759959108154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
