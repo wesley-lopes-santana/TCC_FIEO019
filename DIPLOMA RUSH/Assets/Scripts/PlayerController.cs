@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
 {
     public LayerMask            groundLayer;
     public  GameController      _GameController;
-    private slimeIAMesmo        _SlimeIAMesmo;
+
     public  GameObject          _Escolha;
     public  GameObject          _Escolha_Vini;
 
@@ -62,8 +62,6 @@ public class PlayerController : MonoBehaviour
         _GameControllerTeleporte = FindObjectOfType(typeof(Teleporte)) as Teleporte;
         _GameController = FindObjectOfType(typeof(GameController)) as GameController;
         _GameController.playerTransform = this.transform;
-
-        _SlimeIAMesmo = FindObjectOfType(typeof(slimeIAMesmo)) as slimeIAMesmo;
 
         itens = 0;
         gravidadeInicial = PlayerRb.gravityScale;

@@ -80,11 +80,8 @@ public class slimeIAMesmo : MonoBehaviour
         }
         else if(col.gameObject.tag == "Player")
         {   
-            //StopCoroutine("SlimeWalk");
-            // print(rotinaSlimeAnda);
             StopCoroutine("seguePlayer");
             StartCoroutine("seguePlayer");
-            // Destroy(viuplayer);
         }
     }
 

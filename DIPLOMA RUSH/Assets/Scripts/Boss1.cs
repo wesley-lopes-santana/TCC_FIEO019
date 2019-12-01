@@ -8,9 +8,9 @@ public class Boss1 : MonoBehaviour
     public GameObject[] ProxPosicao;
     private Transform       alvo;
     private Rigidbody2D     slimeRb;
-    private Animator        slimeAnimator;
     public  GameObject      HitBox;
     public static Transform   boss1_local;
+    private Animator        boss1Animator;
 
     public float velocidade;
     public bool estaOlhandoEsquerda;
@@ -24,12 +24,13 @@ public class Boss1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        boss1Animator = GetComponent<Animator>();
         _GameController = FindObjectOfType(typeof(GameController)) as GameController;
         _GameControllerTeleporte = FindObjectOfType(typeof(Teleporte)) as Teleporte;
         alvo = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         boss1_local = this.GetComponent<Transform>();
         slimeRb = GetComponent<Rigidbody2D>();
-        slimeAnimator = GetComponent<Animator>();
+        
         StartCoroutine("mexeChefe");
         StartCoroutine("girachefe");
         
@@ -76,9 +77,9 @@ public class Boss1 : MonoBehaviour
             }
             if (vidaChefe <= 0){
                 Destroy(HitBox);
-                gameObject.SetActive(false);
-                PassouFase.passou = true;
-                ControlaFade.Fade(true, 2f);
+                velocidade = 0;
+                boss1Animator.SetTrigger("morto");
+                StartCoroutine("matouChefe");
                 
             }
             
@@ -104,8 +105,8 @@ public class Boss1 : MonoBehaviour
 
     IEnumerator Pausachefe(){
         velocidade = 0.25f;
-        velocidade = 1.5f;
         yield return new WaitForSeconds(1.5f);
+        velocidade = 1.5f;
         if (vidaChefe <= 6 && vidaChefe >= 3){
             velocidade = 2.0f;
         }
@@ -126,6 +127,14 @@ public class Boss1 : MonoBehaviour
         }
         yield return new WaitForSeconds(2.5f);
         StartCoroutine("girachefe");
+    }
+
+    IEnumerator matouChefe(){
+        
+        yield return new WaitForSeconds(1f);
+        gameObject.SetActive(false);
+        ControlaFade.Fade(true, 2f);
+        PassouFase.passou = true;
     }
 
 }
