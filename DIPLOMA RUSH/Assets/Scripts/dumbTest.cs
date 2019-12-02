@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class slimeIA : MonoBehaviour
+public class dumbTest : MonoBehaviour
 {   
     private GameController  _GameController;
-    private Rigidbody2D     slimeRb;
-    private Animator        slimeAnimator;
+    private Rigidbody2D     DumbTestRb;
+    private Animator        DumbTesteAnimator;
 
     public  float           velocidade;
     public  float           timeToWalk;
@@ -21,17 +21,17 @@ public class slimeIA : MonoBehaviour
     {
         _GameController = FindObjectOfType(typeof(GameController)) as GameController;
 
-        slimeRb = GetComponent<Rigidbody2D>();
-        slimeAnimator = GetComponent<Animator>();
+        DumbTestRb = GetComponent<Rigidbody2D>();
+        DumbTesteAnimator = GetComponent<Animator>();
 
-        StartCoroutine("SlimeWalk");
+        StartCoroutine("DumbTestAnda");
     }
 
     // Update is called once per frame
     void Update()
     {   
         
-        slimeRb.velocity = new Vector2(lados * velocidade, slimeRb.velocity.y);
+        DumbTestRb.velocity = new Vector2(lados * velocidade, DumbTestRb.velocity.y);
 
         if((lados > 0 && estaOlhandoEsquerda == true) || (lados < 0 && estaOlhandoEsquerda == false) )
         {
@@ -40,10 +40,10 @@ public class slimeIA : MonoBehaviour
 
         if(lados != 0)
         {
-            slimeAnimator.SetBool("andando", true);
+            DumbTesteAnimator.SetBool("andando", true);
         }else
         {
-            slimeAnimator.SetBool("andando", false);
+            DumbTesteAnimator.SetBool("andando", false);
         }
 
     }
@@ -54,7 +54,7 @@ public class slimeIA : MonoBehaviour
             lados = 0;
             Destroy(HitBox);
             _GameController.playSFX(_GameController.sfxEnemyDead, 0.32f);
-            slimeAnimator.SetTrigger("morto");
+            DumbTesteAnimator.SetTrigger("morto");
         }else if(col.gameObject.tag == "BarraInimigo")
         {
             if(lados == -1){
@@ -66,7 +66,7 @@ public class slimeIA : MonoBehaviour
     }
     
 
-    IEnumerator SlimeWalk()
+    IEnumerator DumbTestAnda()
     {
         int rand = Random.Range(0,100);
 
@@ -84,7 +84,7 @@ public class slimeIA : MonoBehaviour
 
 
         yield return new WaitForSeconds(timeToWalk);
-        StartCoroutine("SlimeWalk");
+        StartCoroutine("DumbTestAnda");
     }
     
     void OnDead()

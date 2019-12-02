@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InimigoVoador : MonoBehaviour
+public class flyTest : MonoBehaviour
 {
     
     private GameController  _GameController;
-    private Animator        _InimigoVoador;
+    private Animator        FlyTestAnimator;
     public GameObject       _Player;
 
     private bool seguindo;
@@ -19,7 +19,7 @@ public class InimigoVoador : MonoBehaviour
     {
         _GameController = FindObjectOfType(typeof(GameController)) as GameController;
 
-        _InimigoVoador = GetComponent<Animator>();
+        FlyTestAnimator = GetComponent<Animator>();
 
         _Player = GameObject.Find("Player");
     }
@@ -53,7 +53,7 @@ public class InimigoVoador : MonoBehaviour
             seguindo = false;
             Destroy(HitBox);
             _GameController.playSFX(_GameController.sfxEnemyDead, 0.32f);
-            _InimigoVoador.SetTrigger("morto");
+            FlyTestAnimator.SetTrigger("morto");
         }
     }
 

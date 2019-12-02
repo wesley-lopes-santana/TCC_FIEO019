@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class slimeIAMesmo : MonoBehaviour
+public class groundTest : MonoBehaviour
 {   
 
     private GameController  _GameController;
 
-    private Rigidbody2D     slimeRb;
-    private Animator        slimeAnimator;
+    private Rigidbody2D     GroundTestRb;
+    private Animator        GroundTestAnimator;
 
     public  float           velocidade;
     public  float           timeToWalk;
@@ -25,7 +25,7 @@ public class slimeIAMesmo : MonoBehaviour
     private bool            viuOPlayer;
     private Transform       alvo;
 
-    public IEnumerator     rotinaSlimeAnda;
+    public IEnumerator     rotinaGroundTestAnda;
 
     // Start is called before the first frame update
     void Start()
@@ -35,18 +35,18 @@ public class slimeIAMesmo : MonoBehaviour
 
         _GameController = FindObjectOfType(typeof(GameController)) as GameController;
 
-        slimeRb = GetComponent<Rigidbody2D>();
-        slimeAnimator = GetComponent<Animator>();
+        GroundTestRb = GetComponent<Rigidbody2D>();
+        GroundTestAnimator = GetComponent<Animator>();
 
-        // rotinaSlimeAnda = SlimeWalk();
-        StartCoroutine("SlimeWalk");
+        // rotinaGroundTestAnda = GroundTestAnda();
+        StartCoroutine("GroundTestAnda");
     }
 
     // Update is called once per frame
     void Update()
     {   
         
-        slimeRb.velocity = new Vector2(lados * velocidade, slimeRb.velocity.y);
+        GroundTestRb.velocity = new Vector2(lados * velocidade, GroundTestRb.velocity.y);
         
         if((lados > 0 && estaOlhandoEsquerda == true) || (lados < 0 && estaOlhandoEsquerda == false) )
         {
@@ -55,10 +55,10 @@ public class slimeIAMesmo : MonoBehaviour
 
         if(lados != 0)
         {
-            slimeAnimator.SetBool("andando", true);
+            GroundTestAnimator.SetBool("andando", true);
         }else
         {
-            slimeAnimator.SetBool("andando", false);
+            GroundTestAnimator.SetBool("andando", false);
         }   
     }
 
@@ -68,7 +68,7 @@ public class slimeIAMesmo : MonoBehaviour
         if(col.gameObject.tag == "hitBox")
         {
             _GameController.playSFX(_GameController.sfxEnemyDead, 0.32f);
-            slimeAnimator.SetTrigger("morto");
+            GroundTestAnimator.SetTrigger("morto");
             Destroy(HitBox);
         }else if(col.gameObject.tag == "BarraInimigo")
         {
@@ -80,20 +80,20 @@ public class slimeIAMesmo : MonoBehaviour
         }
         else if(col.gameObject.tag == "Player")
         {   
-            StopCoroutine("seguePlayer");
-            StartCoroutine("seguePlayer");
+            StopCoroutine("GroundTestSegue");
+            StartCoroutine("GroundTestSegue");
         }
     }
 
     void OnTriggerExit2D(Collider2D col) {
         if(col.gameObject.tag == "Player")
         {   
-            StopCoroutine("seguePlayer");
-            StartCoroutine("SlimeWalk");
+            StopCoroutine("GroundTestSegue");
+            StartCoroutine("GroundTestAnda");
         }
     }
 
-    IEnumerator SlimeWalk()
+    IEnumerator GroundTestAnda()
     {
         int rand = Random.Range(0,100);
 
@@ -111,13 +111,13 @@ public class slimeIAMesmo : MonoBehaviour
 
 
         yield return new WaitForSeconds(timeToWalk);
-        StartCoroutine("SlimeWalk");
+        StartCoroutine("GroundTestAnda");
     }
     
 
 
 
-    IEnumerator seguePlayer()
+    IEnumerator GroundTestSegue()
     {   
         
         transform.position = Vector2.MoveTowards(transform.position, new Vector2(alvo.position.x, transform.position.y), velocidade2 * Time.deltaTime);
@@ -130,8 +130,8 @@ public class slimeIAMesmo : MonoBehaviour
         lados = 0;
         yield return null;
 
-        StopCoroutine("SlimeWalk");
-        StartCoroutine("seguePlayer");
+        StopCoroutine("GroundTestAnda");
+        StartCoroutine("GroundTestSegue");
     }
 
 
@@ -148,20 +148,20 @@ public class slimeIAMesmo : MonoBehaviour
     }
     void GiraDireita()
     {   
-        slimeAnimator.SetBool("andando", true);
+        GroundTestAnimator.SetBool("andando", true);
         estaOlhandoEsquerda = false;
         float x = System.Math.Abs(transform.localScale.x) * -1 ; //Inverte o sinal do Transform -> Scale -> X
         transform.localScale = new Vector3(x, transform.localScale.y, transform.localScale.z);
     }
     void GiraEsquerda()
     {   
-        slimeAnimator.SetBool("andando", true);
+        GroundTestAnimator.SetBool("andando", true);
         estaOlhandoEsquerda = true;
         float x = System.Math.Abs(transform.localScale.x); //Inverte o sinal do Transform -> Scale -> X
         transform.localScale = new Vector3(x, transform.localScale.y, transform.localScale.z);
     }
 
-    //void seguePlayer()
+    //void GroundTestSegue()
     //{
     //   transform.position = Vector2.MoveTowards(transform.position, new Vector2(alvo.position.x, transform.position.y), velocidade * Time.deltaTime);
     //}
