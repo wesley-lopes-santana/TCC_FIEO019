@@ -120,6 +120,83 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &16573728
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 16573729}
+  - component: {fileID: 16573731}
+  - component: {fileID: 16573730}
+  m_Layer: 5
+  m_Name: NomeFase
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &16573729
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16573728}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2002770469}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 15, y: 42}
+  m_SizeDelta: {x: 167, y: 44.38}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &16573730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16573728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.8396226, g: 0.7874326, b: 0.011881431, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: b069662e326476b43bad04fcf2b99b5a, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "N\xEDvel 3"
+--- !u!222 &16573731
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16573728}
+  m_CullTransparentMesh: 0
 --- !u!4 &20008419 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 236913523734718500, guid: 453b9161bb2dd544f90b7d3aeb93cf87,
@@ -900,7 +977,7 @@ RectTransform:
   - {fileID: 607355891}
   - {fileID: 63640131}
   m_Father: {fileID: 2002770469}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -975,7 +1052,7 @@ RectTransform:
   - {fileID: 53549833}
   - {fileID: 244556224}
   m_Father: {fileID: 2002770469}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.469, y: 1}
@@ -5106,6 +5183,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1360370072}
   - component: {fileID: 1360370073}
+  - component: {fileID: 1360370074}
   m_Layer: 0
   m_Name: Boss 1
   m_TagString: Untagged
@@ -5151,6 +5229,19 @@ MonoBehaviour:
   Moedas: {fileID: 0}
   Coletaveis: {fileID: 0}
   Contador: {fileID: 0}
+--- !u!114 &1360370074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1360370071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7ff0cf4323460d4ab62e4e792c89f10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Fase: {fileID: 16573728}
 --- !u!1 &1364141129
 GameObject:
   m_ObjectHideFlags: 0
@@ -5997,7 +6088,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.41133332, y: 0.51133335}
+    oldSize: {x: 0.41146356, y: 0.51133335}
     newSize: {x: 27.032, y: 0.51}
     adaptiveTilingThreshold: 0.5
     drawMode: 2
@@ -8051,6 +8142,7 @@ RectTransform:
   - {fileID: 567749760}
   - {fileID: 63607790}
   - {fileID: 841658942}
+  - {fileID: 16573729}
   - {fileID: 146391965}
   - {fileID: 176316839}
   - {fileID: 2080784915}
@@ -8400,7 +8492,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2002770469}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}

@@ -8,12 +8,13 @@ public class TeleporteInterno : MonoBehaviour
     public GameObject Portal;
     public GameObject Player;
     public float addX = 0;
+    private Animator   portalAnimator;
 
 
     // Use this for initialization
     void Start()
     {
-
+        portalAnimator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -25,7 +26,8 @@ public class TeleporteInterno : MonoBehaviour
     public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Player")
-        {
+        {   
+            portalAnimator.SetTrigger("abrindo");
             StartCoroutine(Teleport());
         }
     }
