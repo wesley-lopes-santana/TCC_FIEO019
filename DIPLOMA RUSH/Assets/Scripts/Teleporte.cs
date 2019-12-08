@@ -43,6 +43,9 @@ public class Teleporte : MonoBehaviour
         }else if(ProximaFase == 13){
             minimoMoedas = 30;
             minimoItens = 2;
+        }else if(ProximaFase == 16){
+            minimoMoedas = 30;
+            minimoItens = 3;
         }
     }
 

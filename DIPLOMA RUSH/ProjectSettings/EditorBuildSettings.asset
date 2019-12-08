@@ -50,4 +50,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Prototipo.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Fases/MecanicasTCC.unity
+    guid: 9b8baca1f9195134f95c459735bd4ace
   m_configObjects: {}
