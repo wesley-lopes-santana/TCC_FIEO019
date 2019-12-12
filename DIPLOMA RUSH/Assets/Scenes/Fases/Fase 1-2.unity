@@ -8013,16 +8013,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: LapisEspeto (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 1594453393310999134, guid: f3c502a338076d8498830217e564cda5,
-        type: 3}
-      propertyPath: m_SpriteTilingProperty.newSize.x
-      value: 1.24
-      objectReference: {fileID: 0}
-    - target: {fileID: 1594453393310999134, guid: f3c502a338076d8498830217e564cda5,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 1.24
-      objectReference: {fileID: 0}
     - target: {fileID: 1205264954094138936, guid: f3c502a338076d8498830217e564cda5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8083,12 +8073,17 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1205264954094138935, guid: f3c502a338076d8498830217e564cda5,
+    - target: {fileID: 566958170917008756, guid: f3c502a338076d8498830217e564cda5,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 1594453393310999134, guid: f3c502a338076d8498830217e564cda5,
         type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
       value: 1.24
       objectReference: {fileID: 0}
-    - target: {fileID: 1205264954094138935, guid: f3c502a338076d8498830217e564cda5,
+    - target: {fileID: 1594453393310999134, guid: f3c502a338076d8498830217e564cda5,
         type: 3}
       propertyPath: m_Size.x
       value: 1.24
@@ -8103,7 +8098,12 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 1.24
       objectReference: {fileID: 0}
-    - target: {fileID: 566958170917008756, guid: f3c502a338076d8498830217e564cda5,
+    - target: {fileID: 1205264954094138935, guid: f3c502a338076d8498830217e564cda5,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 1.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 1205264954094138935, guid: f3c502a338076d8498830217e564cda5,
         type: 3}
       propertyPath: m_Size.x
       value: 1.24
@@ -10816,7 +10816,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 00a048aa6853beb43a720d2f5a48b45a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8103327a14e2cff43851ba685d4927dc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10845,16 +10845,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LapisEspeto
-      objectReference: {fileID: 0}
-    - target: {fileID: 1594453393310999134, guid: f3c502a338076d8498830217e564cda5,
-        type: 3}
-      propertyPath: m_SpriteTilingProperty.newSize.x
-      value: 4.909917
-      objectReference: {fileID: 0}
-    - target: {fileID: 1594453393310999134, guid: f3c502a338076d8498830217e564cda5,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 4.909917
       objectReference: {fileID: 0}
     - target: {fileID: 1205264954094138936, guid: f3c502a338076d8498830217e564cda5,
         type: 3}
@@ -10916,12 +10906,17 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1205264954094138935, guid: f3c502a338076d8498830217e564cda5,
+    - target: {fileID: 566958170917008756, guid: f3c502a338076d8498830217e564cda5,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 4.909917
+      objectReference: {fileID: 0}
+    - target: {fileID: 1594453393310999134, guid: f3c502a338076d8498830217e564cda5,
         type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
       value: 4.909917
       objectReference: {fileID: 0}
-    - target: {fileID: 1205264954094138935, guid: f3c502a338076d8498830217e564cda5,
+    - target: {fileID: 1594453393310999134, guid: f3c502a338076d8498830217e564cda5,
         type: 3}
       propertyPath: m_Size.x
       value: 4.909917
@@ -10936,7 +10931,12 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 4.909917
       objectReference: {fileID: 0}
-    - target: {fileID: 566958170917008756, guid: f3c502a338076d8498830217e564cda5,
+    - target: {fileID: 1205264954094138935, guid: f3c502a338076d8498830217e564cda5,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 4.909917
+      objectReference: {fileID: 0}
+    - target: {fileID: 1205264954094138935, guid: f3c502a338076d8498830217e564cda5,
         type: 3}
       propertyPath: m_Size.x
       value: 4.909917
@@ -17603,16 +17603,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: LapisEspeto (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 1594453393310999134, guid: f3c502a338076d8498830217e564cda5,
-        type: 3}
-      propertyPath: m_SpriteTilingProperty.newSize.x
-      value: 1.24
-      objectReference: {fileID: 0}
-    - target: {fileID: 1594453393310999134, guid: f3c502a338076d8498830217e564cda5,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 1.24
-      objectReference: {fileID: 0}
     - target: {fileID: 1205264954094138936, guid: f3c502a338076d8498830217e564cda5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17673,12 +17663,17 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1205264954094138935, guid: f3c502a338076d8498830217e564cda5,
+    - target: {fileID: 566958170917008756, guid: f3c502a338076d8498830217e564cda5,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 1594453393310999134, guid: f3c502a338076d8498830217e564cda5,
         type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
       value: 1.24
       objectReference: {fileID: 0}
-    - target: {fileID: 1205264954094138935, guid: f3c502a338076d8498830217e564cda5,
+    - target: {fileID: 1594453393310999134, guid: f3c502a338076d8498830217e564cda5,
         type: 3}
       propertyPath: m_Size.x
       value: 1.24
@@ -17693,7 +17688,12 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 1.24
       objectReference: {fileID: 0}
-    - target: {fileID: 566958170917008756, guid: f3c502a338076d8498830217e564cda5,
+    - target: {fileID: 1205264954094138935, guid: f3c502a338076d8498830217e564cda5,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 1.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 1205264954094138935, guid: f3c502a338076d8498830217e564cda5,
         type: 3}
       propertyPath: m_Size.x
       value: 1.24
